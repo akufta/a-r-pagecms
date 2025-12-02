@@ -73,9 +73,23 @@ const layoutProps = {
       size="lg"
       className="my-2"
     />
-    <article id="article" role="article" class="prose mx-auto mt-8 max-w-3xl">
-      <Content />
-    </article>
+    <div class="post-layout">
+      <article
+        id="article"
+        role="article"
+        class="prose mt-8 post-article"
+      >
+        <Content />
+      </article>
+      <aside class="post-toc" aria-label="Table of contents">
+        <div class="post-toc__sticky">
+          <p class="post-toc__heading">Table of contents</p>
+          <ul id="toc-list" class="post-toc__list">
+            <li class="post-toc__empty">Loading...</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
 
     <ul class="my-8">
       {tags.map(tag => <Tag tag={slugifyStr(tag)} />)}
@@ -104,10 +118,108 @@ const layoutProps = {
 
 <style>
   main {
-    @apply mx-auto w-full max-w-3xl px-4 pb-12;
+    @apply mx-auto w-full max-w-5xl px-4 pb-12;
   }
   .post-title {
     @apply text-2xl font-semibold text-skin-accent;
+  }
+  .post-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(200px, 0.25fr);
+    gap: clamp(3rem, 2vw, 2rem);
+    align-items: flex-start;
+  }
+  .post-article {
+    max-width: 100% !important;
+    width: 100%;
+  }
+  .post-article :is(p, figure, blockquote, img, table, pre) {
+    width: 100%;
+  }
+  .post-toc {
+    display: none;
+  }
+  .post-toc__sticky {
+    position: sticky;
+    top: 4.5rem;
+    padding-left: 0.75rem;
+  }
+  .post-toc__heading {
+    @apply mb-2 text-xs font-semibold uppercase tracking-[0.4em];
+    color: var(--muted);
+  }
+  .post-toc__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .post-toc__list a {
+    color: #201f3b;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    white-space: normal;
+    word-break: break-word;
+    max-width: flex;
+  }
+  .post-toc__list a:hover,
+  .post-toc__list a:focus-visible {
+    color: #5d47ff;
+  }
+  .post-toc__item {
+    text-transform: none;
+  }
+  .post-toc__item a {
+    display: inline-block;
+  }
+  .post-toc__level-h3 {
+    padding-left: 0.75rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  .post-toc__empty {
+    font-size: 0.85rem;
+    color: #6c628c;
+  }
+  .post-heading-group {
+    position: relative;
+  }
+  .heading-link {
+    display: inline-block;
+    opacity: 0;
+    margin-left: 0.45rem;
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 160ms ease, transform 160ms ease;
+    transform: translateY(-1px);
+    font-size: 1rem;
+  }
+  .post-heading-group:hover .heading-link,
+  .post-heading-group:focus-within .heading-link {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (min-width: 1024px) {
+    .post-toc {
+      display: block;
+    }
+  }
+  @media (max-width: 1023px) {
+    .post-layout {
+      grid-template-columns: 1fr;
+    }
+    .post-toc {
+      display: block;
+    }
+    .post-toc__sticky {
+      position: static;
+      top: auto;
+      padding-left: 0;
+      margin-top: 2rem;
+    }
   }
 </style>
 
@@ -156,16 +268,51 @@ const layoutProps = {
   function addHeadingLinks() {
     let headings = Array.from(document.querySelectorAll("h2, h3, h4, h5, h6"));
     for (let heading of headings) {
-      heading.classList.add("group");
+      heading.classList.add("post-heading-group");
       let link = document.createElement("a");
-      link.innerText = "#";
-      link.className = "heading-link hidden group-hover:inline-block ml-2";
+      link.innerText = "";
+      link.className = "heading-link";
       link.href = "#" + heading.id;
-      link.ariaHidden = "true";
+      link.setAttribute("aria-hidden", "true");
       heading.appendChild(link);
     }
   }
+  function generateId(text) {
+    return text
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+  }
+
+  function buildToc() {
+    const tocList = document.getElementById("toc-list");
+    if (!tocList) return;
+    const headings = Array.from(
+      document.querySelectorAll("#article h2, #article h3")
+    );
+    if (!headings.length) {
+      tocList.innerHTML =
+        '<li class="post-toc__empty">No sections available.</li>';
+      return;
+    }
+    tocList.innerHTML = "";
+    headings.forEach((heading) => {
+      if (!heading.id) {
+        heading.id = generateId(heading.textContent ?? heading.innerText);
+      }
+      const item = document.createElement("li");
+      item.className = `post-toc__item post-toc__level-${heading.tagName.toLowerCase()}`;
+      const link = document.createElement("a");
+      link.href = `#${heading.id}`;
+      link.textContent = heading.textContent?.trim() ?? "";
+      item.appendChild(link);
+      tocList.appendChild(item);
+    });
+  }
+
   addHeadingLinks();
+  buildToc();
 
   /** Attaches copy buttons to code blocks in the document,
    * allowing users to copy code easily. */

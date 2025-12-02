@@ -1,0 +1,44 @@
+---
+import Datetime from "./Datetime";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  slug: string;
+  frontmatter: CollectionEntry<"blog">["data"];
+  imageUrl?: string | null;
+}
+
+const { slug, frontmatter, imageUrl } = Astro.props as Props;
+const { title, description, pubDatetime, modDatetime } = frontmatter;
+const hasImage = Boolean(imageUrl);
+const mediaStyle = imageUrl ? `background-image:url(${imageUrl});` : undefined;
+const placeholderLabel = title
+  .split(" ")
+  .slice(0, 3)
+  .join(" ")
+  .toUpperCase();
+---
+
+<article class="featured-card">
+  <div
+    class={`featured-card__media${hasImage ? "" : " featured-card__media--placeholder"}`}
+    style={mediaStyle}
+    aria-hidden="true"
+  >
+    {!hasImage && (
+      <span class="featured-card__placeholder-label">{placeholderLabel}</span>
+    )}
+  </div>
+  <div class="featured-card__content">
+    <h3 class="featured-card__title">
+      <a href={`/posts/${slug}/`}>{title}</a>
+    </h3>
+    <Datetime
+      pubDatetime={pubDatetime}
+      modDatetime={modDatetime}
+      className="featured-card__meta"
+      size="sm"
+    />
+    <p>{description}</p>
+  </div>
+</article>

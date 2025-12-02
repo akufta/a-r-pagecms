@@ -1,0 +1,47 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Main from "@layouts/Main.astro";
+import IdeaGenerator from "@components/IdeaGenerator";
+
+const pageTitle = "Idea Generator";
+const pageDesc = "Lightweight art prompt generator adapted from Art-Res.";
+---
+
+<Layout title={`${pageTitle} | Art-Res`}>
+  <Header />
+  <Main pageTitle={pageTitle} pageDesc={pageDesc}>
+    <section class="hero-panel">
+      <div class="hero-heading">
+        <h1>What's this?</h1>
+        <p class="hero-subtitle">
+          Generate new concepts when you feel stuck at the easel
+        </p>
+      </div>
+      <div class="hero-content">
+        <p class="hero-text">
+         Made for those days when you can’t think of anything to create, this art idea generator has your back!, characters, and environments so you can keep creating when inspiration runs
+          dry. Click the button for ten fresh prompts or keep jotting the ones you plan to explore. Forked and customized from this <a href="https://codepen.io/tomhodgins/pen/RJOraE">Codepen</a>
+        </p>
+        <p class="hero-text hero-secondary">
+          Want to keep a few favorites? Paste them below and copy them into your notes when you
+          are ready to build.
+        </p>
+      </div>
+    </section>
+    <IdeaGenerator client:load />
+  </Main>
+  <Footer />
+</Layout>
+
+<style>
+  #main-content {
+    min-height: calc(100vh - 200px);
+    padding-bottom: 3rem;
+  }
+
+  .idea-generator {
+    margin-bottom: 3rem;
+  }
+</style>

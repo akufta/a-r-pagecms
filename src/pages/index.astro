@@ -7,8 +7,8 @@ import LinkButton from "@components/LinkButton.astro";
 
 import Hr2 from "@components/Hr2.astro"
 import Card from "@components/Card";
+import FeaturedCard from "@components/FeaturedCard.astro";
 import Socials from "@components/Socials.astro";
-import Datetime from "@components/Datetime";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
 
@@ -32,7 +32,7 @@ const getOgImageUrl = (ogImage) => {
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1 style="font-size: 1.8em">Welcome to Art-Res</h1>
+      <div align="center"><h1 style="margin:0 auto; font-size: 1.8em;">Welcome to Art-Res</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -48,21 +48,12 @@ const getOgImageUrl = (ogImage) => {
           ></path><circle cx="6" cy="18" r="2"></circle>
         </svg>
         <span class="sr-only">RSS Feed</span>
-      </a>
-      <p>
+      </a></div>
+      <p class="hero-text">
         Interested in learning how to draw or improve your painting skills? I got you!  <br> Here you can find a consistently updated collection of useful resources, tutorials, and stock for artists!<br>
-        Curated by hand and with love by <a href="https://instagram.com/akufta.art">Allison</a>.
-  
+        Curated by hand and with love by <a class="start-here-line" href="https://instagram.com/akufta.art">Allison</a>.
       </p>
-      <p>
-        Read the blog posts or check
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
-      </p>
+    
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
@@ -72,12 +63,11 @@ const getOgImageUrl = (ogImage) => {
           </div>
         )
       }
-          <Hr2 />
     </section>
 
     <section class="panel-card newsletter-card">
       <div>
-        <h5>Join the Art-Res Family</h5>
+        <h4>Join the Art-Res Family</h4>
         <hr class="Hr2" style="py-3" aria-hidden="true"></div>
         <p> <br>
           Subscribe to gain access to the newsletter, an invite to our community
@@ -99,7 +89,7 @@ const getOgImageUrl = (ogImage) => {
 
     <section class="panel-card start-here-card">
       <div align="center">
-        <h5>Start Here!</h5>
+        <h4>Start Here!</h4>
         <p>
           <strong>Art-Res Anatomy E-Book!</strong>
           (
@@ -245,7 +235,7 @@ const getOgImageUrl = (ogImage) => {
 
     <section class="panel-card inspiration-card">
       <div>
-        <h5>Need some inspiration?</h5>
+        <h4>Need some inspiration?</h4>
         <p>I got you! Check out these Artist Utilities!</p>
         <div class="inspiration-grid">
           <a
@@ -286,25 +276,11 @@ const getOgImageUrl = (ogImage) => {
             {featuredPosts.map(({ data, slug }) => {
               const imageUrl = getOgImageUrl(data.ogImage);
               return (
-                <article class="featured-card">
-                  <div
-                    class={`featured-media ${imageUrl ? "" : "featured-media--placeholder"}`}
-                    style={imageUrl ? `background-image:url(${imageUrl});` : undefined}
-                    aria-hidden="true"
-                  />
-                  <div class="featured-card__content">
-                    <h5>
-                      <a href={`/posts/${slug}/`}>{data.title}</a>
-                    </h5>
-                    <Datetime
-                      pubDatetime={data.pubDatetime}
-                      modDatetime={data.modDatetime}
-                      size="lg"
-                      className="featured-card__meta"
-                    />
-                    <p>{data.description}</p>
-                  </div>
-                </article>
+                <FeaturedCard
+                  slug={slug}
+                  frontmatter={data}
+                  imageUrl={imageUrl}
+                />
               );
             })}
           </div>

@@ -1,7 +1,5 @@
 ---
 import { LOGO_IMAGE, SITE } from "@config";
-import Hr from "./Hr.astro";
-import Hr2 from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
 export interface Props {
@@ -11,7 +9,7 @@ export interface Props {
 const { activeNav } = Astro.props;
 ---
 
-<header>
+<header class="header-shell">
   <a id="skip-to-content" href="#main-content">Skip to content</a>
   <div class="nav-container">
     <div class="top-nav-wrap">
@@ -134,10 +132,17 @@ const { activeNav } = Astro.props;
       </nav>
     </div>
   </div>
-  <Hr2 />
 </header>
 
 <style>
+  header {
+    @apply sticky top-0 z-30 transition duration-500;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(189, 173, 255, 0.25);
+    box-shadow: 0 2px 12px -16px rgba(28, 22, 60, 0.45);
+    padding: 0.2rem 0;
+  }
   #skip-to-content {
     @apply absolute -top-full left-16 z-50 bg-skin-accent px-2 py-2 text-skin-inverted transition-all focus:top-4;
   }
@@ -145,10 +150,13 @@ const { activeNav } = Astro.props;
     @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
   }
   .top-nav-wrap {
-    @apply relative flex w-full items-start justify-between p-3 sm:items-center sm:py-6;
+    @apply relative flex w-full items-center justify-between px-3 py-2 sm:px-0 sm:py-2;
   }
   .logo {
-    @apply absolute py-1 text-xl font-semibold sm:static sm:text-2xl;
+    @apply absolute py-1 text-xl font-semibold tracking-tight text-slate-900 transition duration-300 hover:text-skin-accent sm:static sm:text-2xl;
+  }
+  .logo img {
+    @apply drop-shadow-lg;
   }
   .hamburger-menu {
     @apply self-end p-2 sm:hidden;
@@ -158,16 +166,39 @@ const { activeNav } = Astro.props;
   }
 
   nav {
-    @apply flex w-full flex-col items-center sm:ml-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0;
+    @apply flex w-full flex-col items-center sm:ml-2 sm:flex-row sm:items-center sm:justify-end sm:space-x-4 sm:py-0;
   }
   nav ul {
-    @apply mt-4 grid w-44 grid-cols-2 grid-rows-4 gap-x-2 gap-y-2 sm:ml-0 sm:mt-0 sm:w-auto sm:gap-x-5 sm:gap-y-0;
+    @apply mt-4 grid w-full grid-cols-2 gap-2 sm:mt-0 sm:w-auto sm:flex sm:items-center sm:gap-2;
   }
   nav ul li {
-    @apply col-span-2 flex items-center justify-center;
+    @apply flex items-center justify-center;
   }
   nav ul li a {
-    @apply w-full px-4 py-3 text-center font-medium hover:text-skin-accent sm:my-0 sm:px-2 sm:py-1;
+    @apply relative w-full px-3 py-2 uppercase text-center font-semibold text-base text-slate-900 transition duration-300;
+    border-radius: 0;
+    background: transparent;
+  }
+  nav ul li a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0;
+    background: rgba(229, 216, 255, 0.75);
+    opacity: 0;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    transform: translateY(2px);
+    z-index: -1;
+  }
+  nav ul li a:hover,
+  nav ul li a:focus-visible {
+    color: #1f1b2d;
+    transform: translateY(-1px);
+  }
+  nav ul li a:hover::after,
+  nav ul li a:focus-visible::after {
+    opacity: 1;
+    transform: translateY(0);
   }
   nav ul li:nth-last-child(2) a {
     @apply w-auto;
@@ -187,13 +218,13 @@ const { activeNav } = Astro.props;
     @apply p-1;
   }
   nav button svg {
-    @apply h-6 w-6 fill-skin-base hover:fill-skin-accent;
+    @apply h-6 w-6 fill-skin-base transition duration-300 ease-out hover:fill-skin-accent;
   }
   #theme-btn {
-    @apply p-3 sm:p-1;
+    @apply p-3 sm:p-1 transition duration-300;
   }
   #theme-btn svg {
-    @apply scale-125 hover:rotate-12 sm:scale-100;
+    @apply scale-125 transition duration-500 ease-out sm:scale-100;
   }
 
   .menu-icon line {
