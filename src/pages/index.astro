@@ -32,7 +32,7 @@ const getOgImageUrl = (ogImage) => {
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1 style="font-size: 2em">Welcome to Art-Res</h1>
+      <h1 style="font-size: 1.8em">Welcome to Art-Res</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -49,7 +49,6 @@ const getOgImageUrl = (ogImage) => {
         </svg>
         <span class="sr-only">RSS Feed</span>
       </a>
-
       <p>
         Interested in learning how to draw or improve your painting skills? I got you!  <br> Here you can find a consistently updated collection of useful resources, tutorials, and stock for artists!<br>
         Curated by hand and with love by <a href="https://instagram.com/akufta.art">Allison</a>.
@@ -78,7 +77,7 @@ const getOgImageUrl = (ogImage) => {
 
     <section class="panel-card newsletter-card">
       <div>
-        <h3>Join the Art-Res Family</h3>
+        <h5>Join the Art-Res Family</h5>
         <hr class="Hr2" style="py-3" aria-hidden="true"></div>
         <p> <br>
           Subscribe to gain access to the newsletter, an invite to our community
@@ -99,8 +98,8 @@ const getOgImageUrl = (ogImage) => {
     </section>
 
     <section class="panel-card start-here-card">
-      <div>
-        <h3>Start Here!</h3>
+      <div align="center">
+        <h5>Start Here!</h5>
         <p>
           <strong>Art-Res Anatomy E-Book!</strong>
           (
@@ -246,7 +245,7 @@ const getOgImageUrl = (ogImage) => {
 
     <section class="panel-card inspiration-card">
       <div>
-        <h3>Need some inspiration?</h3>
+        <h5>Need some inspiration?</h5>
         <p>I got you! Check out these Artist Utilities!</p>
         <div class="inspiration-grid">
           <a
@@ -294,9 +293,9 @@ const getOgImageUrl = (ogImage) => {
                     aria-hidden="true"
                   />
                   <div class="featured-card__content">
-                    <h3>
+                    <h5>
                       <a href={`/posts/${slug}/`}>{data.title}</a>
-                    </h3>
+                    </h5>
                     <Datetime
                       pubDatetime={data.pubDatetime}
                       modDatetime={data.modDatetime}
@@ -360,7 +359,7 @@ const getOgImageUrl = (ogImage) => {
     @apply pb-6 pt-4;
   }
   #hero h1 {
-    @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
+    @apply my-2 inline-block text-3xl font-bold sm:my-2 sm:text-5xl;
   }
   #hero .rss-link {
     @apply mb-6;
