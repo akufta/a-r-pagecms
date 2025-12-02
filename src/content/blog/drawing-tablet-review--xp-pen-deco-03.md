@@ -10,7 +10,7 @@ tags:
   - art help
   - art
   - review
-ogImage: deco03.jpg
+ogImage: ""
 description: My Wacom Bamboo capture's port broke, and I wanted to invest in another drawing tablet. This is my review of the XP-PEN Deco 03!
 ---
 My Wacom Bamboo capture's port broke, and I wanted to invest in another drawing tablet. This is my review of the XP-PEN Deco 03!

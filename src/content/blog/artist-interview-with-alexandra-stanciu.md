@@ -13,7 +13,7 @@ tags:
   - art help
   - interview
   - art
-ogImage: acoveras.png
+ogImage: ""
 description: An interview with the instagram artist Alexandra Stanciu/TROUVAILLE Graphics
 ---
 

@@ -4,7 +4,7 @@ author: 'A. Kufta'
 pubDatetime: 2020-03-13T05:00:00Z
 slug: artist-interview-with-armando-cabba-nsfw
 featured: false
-ogImage: armandocov.png
+ogImage: ""
 description: Artist interview with the artist Armando Cabba
 ---
 
@@ -19,7 +19,7 @@ He is known for his duality of portraiture and abstract art, though he ventures 
   
 It all began a year ago with the first painting Resurrection of Christ by Raphael . I imagine Tumblr is going to flag the image, but it’s a close up of a vagina. I didn’t wake up one day deciding “I’m going to paint tits n bits because I’m living la vida loca” The idea began with the infamous Tumblr ban on adult content and how they directly said “female presenting nipples” as their main example. It’s a bunch of corporate bullsh*t that didn’t solve any problem and did more damage than good. So I decided to do what I do best and that’s being a creative pain in the ass resulting in these paintings being born and being available on Instagram and other social media platforms despite the rules.  
 
-![Image](armando1.jpg)
+![Image](../../assets/images/armando1.jpg)
 
 *Resurrection of Christ* 
 
@@ -30,7 +30,7 @@ Why not? I think it’s funny. Knowing there’s some old art historian who is t
   
 On a more serious note, If there’s one common thing to know regarding online censorship, if it has any relation to Christianity, it’s going to fly. Putting hashtags like #jesus , #thebible , etc will stay up because no one wants to forbid any preaching regarding that god. It’s a form of supremacy at the end of the day because if I would use any religion that’s not practiced by mainly white people, it be over in a heartbeat. If you’re making a frown and don’t understand the link I’m making regarding Jesus and white supremacy, just look at any history book. We had lunatics running around the desert wearing toaster helmets and red crosses killing Muslims in the name of God. We “converted” how many indigenous people since Columbus showed up? Mainstream Christianity will never be censored which allows hate speech spread from extremists groups like the KKK and Westboro Baptist church. I’ve figured out how to use it to get my paintings out there and also to annoy whatever conservative might be on the other end of the screen.
 
-![Image](armando2.jpg)
+![Image](../../assets/images/armando2.jpg)
 
 *Baptism of Christ* 
 
@@ -46,7 +46,7 @@ You’re not the first to ask that and it’s a great question. I’ve been hesi
 
 I think people misinterpret someone’s sexual expression as sexual availability. Just because you see someone posting revealing photos on your feed, that doesn’t translate to them inviting you into their DMs or them wanting to have sex with you. That’s one issue I’ve witnessed first hand regarding my friends sharing their stories and experiences on social media. Men over time have dictated a woman’s worth based on their physical beauty. Women figured out they can turn that into currency and men get pissed off about it. If you think I’m being outrageous, look at all the instances of men calling the IRS on women who make money off of their bodies using things like Snapchat. The amount of forums that are dedicated to leaked content because people would rather steal than support that person’s work. It’s frustrates people when they believe things are catered to them and they find out it has 0 to do with them or they’re denied, they get upset. Regardless of how far we’ve come on the gender equality front, unfortunately women are still considered objects either consciously or not and the majority of men have not unlearned that.
 
-![Image](armando4.jpg)
+![Image](../../assets/images/armando4.jpg)
 
 *Martyrdom of St. Agatha* 
 
@@ -59,7 +59,7 @@ Honestly, I’ve received tons of positive feedback from everyone. To have indiv
 
 If you see my work online and you ask yourself “How the hell did this end up on my feed?” “Why is this allowed?” then you’re asking the right questions. I want the viewer to wonder why paintings referenced from mainstream porn are being posted on Instagram. Don’t expect an answer in a matter of seconds. Engage your mind a bit and question the system and understand there’s a problem. 
 
-![Image](armando3.jpg)
+![Image](../../assets/images/armando3.jpg)
 
 *Lamentation of Christ* 
 

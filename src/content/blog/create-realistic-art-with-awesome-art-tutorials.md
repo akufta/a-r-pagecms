@@ -14,7 +14,7 @@ tags:
   - realism
   - guide
   - art
-ogImage: realisticcover.jpg
+ogImage: ""
 description: Learn how to draw more realistically; this article curates art tutorials for artists interested in mastering artistic realism.
 ---
 Learn how to create realistic art (and semi realistic art) with these excellent drawing tutorials, hand picked by me.

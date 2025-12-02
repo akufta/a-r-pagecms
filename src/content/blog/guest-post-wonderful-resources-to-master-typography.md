@@ -9,7 +9,7 @@ tags:
   - digital art\n
   - masterpost
   - design
-ogImage: typocov.png
+ogImage: ""
 description: Interested in boosting your graphic design skills? Here is a master post of typography resources
 ---
 Here is a guest post outlining awesome resources to help you learn about typography. 

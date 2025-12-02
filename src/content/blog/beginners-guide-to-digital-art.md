@@ -19,7 +19,7 @@ tags:
   - illustration
   - art tutorials for beginners
   - drawing lessons for beginners
-ogImage: photo-1512295767273-ac109ac3acfa.jpeg
+ogImage: ""
 description: Are you someone who wants to learn how to approach digital art as a beginner? Jump start your art journey today with these awesome, hand curated art tutorials on digital art..
 ---
 A detailed post with links to other helpful resources and art tutorials with advice on how to approach digital art as a beginner–from hardware, to software, to workflow. Learning how to draw can be daunting, but hopefully this guide streamlines your study.

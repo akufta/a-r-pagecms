@@ -9,8 +9,8 @@ tags:
   - open source software programs
   - guide
   - free digital art software
-ogImage: photo-1512486130939-2c4f79935e4f.jpeg
-description: Need help finding great free art software and open source art software? Art-Res has you covered with the best free photoshop alternatives, free painting software, free drawing software, and free video editors.
+ogImage: ""
+description: Need help finding great free art software and open source art software? 
 ---
 Here is a great list of the best free and open source software alternatives to paid art programs like photoshop, final cut pro, and adobe illustrator that I think all artists should know about.
 

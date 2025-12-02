@@ -7,7 +7,7 @@ featured: false
 tags:
   - guide
   - style
-ogImage: stylecover.png
+ogImage: ""
 description: Exploring your individuality as an artist is important. This is an article with tips and tricks on how to find and develop your own artistic style. 
 ---
 You are stylish!

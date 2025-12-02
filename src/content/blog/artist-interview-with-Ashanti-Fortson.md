@@ -4,7 +4,7 @@ author: 'A. Kufta'
 pubDatetime: 2021-01-26T05:00:00Z
 slug: artist-interview-with-ashanti-fortson
 featured: false
-ogImage: ashanti.png
+ogImage: ""
 description: Artist interview with the artist Ashanti Fortson
 ---
 

@@ -1,0 +1,363 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+const pageTitle = "Color Inspiration";
+const pageDescription = "A color generator and palette inspiration resource";
+---
+
+<Layout title={pageTitle} description={pageDescription} scrollSmooth>
+  <div class="needs-colors-page">
+    <div class="bmc-wrapper">
+      <a
+        class="bmc-button"
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.buymeacoffee.com/aky"
+      >
+        <img
+          src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
+          alt="Buy me a coffee"
+        />
+        <span>Buy me a coffee</span>
+      </a>
+    </div>
+
+    <div class="tropicalbox">
+      <h3>Looking for tutorials on color theory?</h3>
+      <p>I got you covered:</p>
+      <figure>
+        <a
+          href="https://artres.xyz/shop/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="https://66.media.tumblr.com/4c38ddbb7e4dcb75400bf3796e0bbb8b/tumblr_inline_pm5tkboax61ralnei_500.jpg"
+            alt="Color Theory Primer"
+            loading="lazy"
+          />
+        </a>
+      </figure>
+      <p>
+        Clean, offline PDF of
+        <a
+          href="https://artres.xyz/post/wonderful-resources-to-master-color-theory/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Wonderful resources to master color theory
+        </a>
+      </p>
+    </div>
+
+    <section class="custom-palettes">
+      <h2>Custom Palettes</h2>
+      <p>I created a few palettes of color combos I like! More are coming soon!</p>
+      <div class="palette-gallery">
+        <figure>
+          <img
+            src="https://66.media.tumblr.com/64cf25489fa7c9523297b36769f7ec9f/tumblr_pd0p60mXwO1rm7an6o1_500.png"
+            alt="Palette"
+            loading="lazy"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://66.media.tumblr.com/90da10148bcf0d5392748c2c61bb411d/tumblr_osg66uCQfr1rm7an6o1_1280.jpg"
+            alt="Palette"
+            loading="lazy"
+          />
+        </figure>
+        <figure>
+          <img
+            src="https://66.media.tumblr.com/b84688fd47a2fad6ee921a9083473ead/tumblr_oqgpf6ecoY1rm7an6o1_1280.jpg"
+            alt="Palette"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section class="generator">
+      <h2>Random Palette Generator - Colors!</h2>
+      <p>
+        This tool works well with the
+        <a href="https://artres.xyz/ideas" target="_blank" rel="noreferrer">Idea Generator</a>
+        &
+        <a href="https://artres.xyz/references" target="_blank" rel="noreferrer">Visual Reference Boards</a>
+        tools! Forked from
+        <a href="https://codepen.io/linuscodes/pen/gJVEXe" target="_blank" rel="noreferrer">this CodePen</a>
+        & modified. Mobile support in progress!!
+      </p>
+
+      <div class="colorgen">
+        <canvas id="canvas" aria-label="Palette preview"></canvas>
+        <h1 class="title">Random Palette Generator</h1>
+        <label class="rotate-label" for="rotate">Rotate hue (bottom two rows):</label>
+        <input id="rotate" type="number" value="90" min="15" max="360" />
+
+        <div class="palette">
+          <div class="single">
+            <div id="color1"></div>
+            <div class="hex"></div>
+          </div>
+          <div class="single">
+            <div id="color2"></div>
+            <div class="hex"></div>
+          </div>
+          <div class="single">
+            <div id="color3"></div>
+            <div class="hex"></div>
+          </div>
+        </div>
+
+        <div class="palette">
+          <div class="single">
+            <div id="color4"></div>
+            <div class="hex"></div>
+          </div>
+          <div class="single">
+            <div id="color5"></div>
+            <div class="hex"></div>
+          </div>
+          <div class="single">
+            <div id="color6"></div>
+            <div class="hex"></div>
+          </div>
+        </div>
+
+        <div class="palette">
+          <div class="single">
+            <div id="color7"></div>
+            <div class="hex"></div>
+          </div>
+          <div class="single">
+            <div id="color8"></div>
+            <div class="hex"></div>
+          </div>
+          <div class="single">
+            <div id="color9"></div>
+            <div class="hex"></div>
+          </div>
+        </div>
+
+        <p class="instructions">
+          Hit [<kbd class="key">Space</kbd>] or the button below for a new palette<br />
+          Hit [<kbd class="key">E</kbd>] to toggle the background color
+        </p>
+
+        <div class="button-wrapper">
+          <button class="pulsebttn" id="myBtn" type="button">Click for more colors!</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="/js/colors.js" is:inline></script>
+
+  <style is:inline>
+    .needs-colors-page {
+      margin: 0 auto;
+      padding: clamp(2rem, 3vw, 3rem);
+      max-width: 900px;
+      font-family: "Source Sans 3", "Source Sans Pro", system-ui, sans-serif;
+      color: #0d0d0d;
+    }
+
+    .needs-colors-page h1,
+    .needs-colors-page h2,
+    .needs-colors-page h3 {
+      margin-bottom: 0.35rem;
+      letter-spacing: 0.02em;
+    }
+
+    .needs-colors-page p {
+      line-height: 1.6;
+      margin-top: 0;
+    }
+
+    .bmc-wrapper {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .bmc-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      border: none;
+      background: #0c0c0c;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .bmc-button img {
+      width: 26px;
+      height: auto;
+      display: block;
+    }
+
+    .tropicalbox {
+      background: radial-gradient(circle at top right, #ffe4e1, #fdeef2 40%, #ffffff 75%);
+      border: 1px solid rgba(255, 151, 0, 0.5);
+      padding: clamp(1.5rem, 3vw, 2rem);
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 20px 45px rgba(255, 151, 0, 0.15);
+      margin-bottom: 3rem;
+    }
+
+    .tropicalbox figure {
+      margin: 1rem auto 0;
+    }
+
+    .tropicalbox img {
+      width: min(480px, 100%);
+      border-radius: 1rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    }
+
+    .custom-palettes {
+      margin-top: 2rem;
+    }
+
+    .palette-gallery {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .palette-gallery img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 25px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .generator {
+      margin-top: 2.5rem;
+    }
+
+    .colorgen {
+      margin-top: 1.5rem;
+      background: #07090f;
+      border-radius: 2rem;
+      padding: clamp(1.5rem, 3vw, 2.5rem);
+      color: #f5f5ff;
+      box-shadow: 0 20px 40px rgba(10, 10, 20, 0.45);
+    }
+
+    .colorgen .title {
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      margin: 0.5rem 0 1rem;
+      letter-spacing: 0.08em;
+    }
+
+    .rotate-label {
+      display: block;
+      margin-bottom: 0.4rem;
+      color: rgba(255, 255, 255, 0.75);
+      font-weight: 500;
+    }
+
+    #rotate {
+      width: clamp(180px, 30vw, 220px);
+      padding: 0.4rem 0.75rem;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .palette {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .single {
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    .single > div:first-child {
+      height: 90px;
+      border-radius: 0.8rem;
+      background: #111;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+      transition: transform 180ms ease;
+    }
+
+    .single > div:first-child:hover {
+      transform: translateY(-3px) scale(1.01);
+    }
+
+    .hex {
+      margin-top: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+    }
+
+    .instructions {
+      margin-top: 1rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .key {
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 4px;
+      padding: 0.05rem 0.35rem;
+      font-size: 0.9rem;
+    }
+
+    .button-wrapper {
+      margin-top: 0.75rem;
+    }
+
+    .pulsebttn {
+      background: linear-gradient(120deg, #ff8b3d, #ff5f9a);
+      border: none;
+      border-radius: 999px;
+      padding: 0.65rem 1.8rem;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 15px 30px rgba(255, 95, 154, 0.35);
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .pulsebttn:hover,
+    .pulsebttn:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 35px rgba(255, 95, 154, 0.45);
+    }
+
+    canvas {
+      width: clamp(280px, 60vw, 520px);
+      height: 110px;
+      margin: 0 auto 1.25rem;
+      display: block;
+      border-radius: 1.25rem;
+      background: #0b0d15;
+      box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.12);
+    }
+
+    :global(body.palette-dark) {
+      background: #050509;
+    }
+
+    .needs-colors-page a {
+      color: #fcd76a;
+    }
+  </style>
+</Layout>

@@ -8,7 +8,7 @@ tags:
   - guide
   - masterpost
   - art theory 
-ogImage: photo-1503289408281-f8314bf417c3.jpeg
+ogImage: ""
 description: Artist how to guide for mastering color theory! A resource covering my favorite color theory resources, how to apply it, and tools
 ---
 Learning Color Theory is essential for aesthetically appealing art that contains color. It connects to other concepts in art theory like value/lighting as well, so it is important.
@@ -26,7 +26,7 @@ Check it out here! https://bmc.xyz/l/colortheory
 
 Don't worry, this article will still be updated and any new resources will not be locked down by a paywall </div>
 
-￼![color wheel tutorial](colorwheeltut.png)
+￼![color wheel tutorial](../../assets/images/colorwheeltut.png)
 
 This image breaks down basic color schemes & color theory. Referencing this and/or committing this to memory will help you design color palettes and make decisions that look aesthetically pleasing.
 

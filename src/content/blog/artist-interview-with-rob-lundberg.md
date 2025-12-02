@@ -10,7 +10,7 @@ tags:
   - art help
   - interview
   - art
-ogImage: robcover.jpg
+ogImage: ""
 description: An interview with the lovely and talented photographer Rob Lundberg! 
 ---
 An interview with the lovely and talented photographer Rob Lundberg! 
@@ -45,7 +45,7 @@ www.instagram.com/r_lundberg
 
 >  Well, I started taking photography on more serious note (with regards to my chosen medium) late 2016 during my transition from Boston to Brooklyn. Before, then I was completely focused on design, things changed when I met my now two good friends Jas and Dre, whom lent me a decent DSLR and off I went. I started shooting the energized New York City streets, while constantly studying the principles of photography. I then met my current partner Melissa (coincidently a publicist)  whom completely supported my work and connected me with Paste Magazine and was off and running shooting indie bands from NYC, Boston, and Philadelphia. Photography offers me a chance to engage with different aspects of the world, sub cultures, events, nature, as a photographer one is at a great advantage to explore, to roam, to learn, and discover. This "sage" like aspect is what I love about photography and offers me great insight into the world.
 
-  ![Image](robv3.jpg)
+  ![Image](../../assets/images/robv3.jpg)
 
 *Green Point*
 
@@ -60,7 +60,7 @@ www.instagram.com/r_lundberg
 
 > Hmm well, I have so many influences and inspirations that build my photographic foundation from political and social issues, fine art, literature, to culture in general. However, diving into specifics what inspires me on a deeper level are the micro spaces / moments that mostly go unnoticed by the general populous. For example a brief interaction between two people on the street: that instance of joy, anger, frustration, sadness, warmth, or lack thereof. This space of movement and transference of energy fascinates me, such the camera is the perfect tool to document this invisible phenomena. With regards to objects, observing light and shadow play across a table while a object interjects itself within the pathway creating an alternative shadow artifact is deeply inspiring. 
 
-  ![Image](robv2.jpg)
+  ![Image](../../assets/images/robv2.jpg)
 
 *Eric*
 
@@ -68,7 +68,7 @@ www.instagram.com/r_lundberg
 
 > Currently my favorite tools of the trade go as followed, though not included are the tools on my wish list: Canon EOS Rebel T3i with 50mm prime lens, Lomography La Sardina with 35mm film (a fun little tool), Fujifilm Fujica AZ-1 35mm Film M42 Screw Mount SLR , and for more fun a Fujifilm Instax 300 wide camera. In addition, 35mm film, a notebook, pen/pencil, research materials ie literature both digital and printed, several SD cards, a 2015 15 inch Macbook pro with 16GB of ram with software, plus a one terabyte external hard drive. Regarding workflow while on assignment: I generally conduct a check of all my gear to ensure all is working properly and ready for use, arrive early on location to inspect lighting environments and chat with subjects or point of contact with respects to shooting music events, shoot said event then wrap, finally the next day post process and send to the editor. In contrast, while shooting for the street I may have a section of town in mind I want to go explore, however I generally just grab a  camera and wander without expectations letting subject matter come to my eye. 
 
-  ![Image](robv1.jpg)
+  ![Image](../../assets/images/robv1.jpg)
 
 *Hot Dog*
 

@@ -17,7 +17,7 @@ tags:
   - best film making tutorial
   - film making
   - software
-ogImage: photo-1506434304575-afbb92660c28.jpeg
+ogImage: ""
 description: Learn how to be a filmmaker and make better movies with these resources and tutorials. 
 ---
 Learn how to be a filmmaker and make better movies with these resources and resources for the aspiring filmmaker.

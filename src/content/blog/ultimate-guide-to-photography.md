@@ -11,7 +11,7 @@ tags:
   - photography
   - guide
   - art
-ogImage: camerag.jpg
+ogImage: ""
 description: A guide to photography for beginners, explaining the fundamentals of what makes a good photograph.
 ---
 Ever wondered how to learn to photograph? This ultimate guide has you covered with tips that will get you on your way, and hopefully answer some of your photography questions.

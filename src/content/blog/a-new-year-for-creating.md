@@ -15,7 +15,7 @@ tags:
   - review
   - reflection
   - '2017'
-ogImage: coverfirework.jpg
+ogImage: ""
 description: Here's to a great 2018 year . A look at things I've done and things I plan to do.
 ---
 

@@ -23,7 +23,7 @@ tags:
   - studyblr
   - printable
   - design 
-ogImage: photo-1488190211105-8b0e65b80b4e.jpeg
+ogImage: ""
 description: Want to boost your productivity? I made a free habit tracker printable in Affinity Design to help!
 ---
 Since productivity and time management is important for artists, I made a printable to help my fellow artists with habit tracking.

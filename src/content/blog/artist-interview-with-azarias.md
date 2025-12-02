@@ -11,7 +11,7 @@ tags:
   - art help
   - interview
   - art
-ogImage: azariascover.jpg
+ogImage: ""
 description: Artist  interview  with abstract artist Azarias
 ---
 An interview with the talented artist from France, Azarias! 
@@ -29,7 +29,7 @@ An interview with the talented artist from France, Azarias!
   
 >I felt the power of art from a very young age. I realised very soon that art was offering me an area of freedom like no others and I started to explore many art forms (music, painting, drawing, sculpture, photography, graffiti, digital art, writing, ...). I now focus on visual art but I recently presented a piece of performance with dancing, music and a digital installation. I never know where an idea will lead me and that's what amazes me everytime.
 
-![A piece by Azarias](azarias1.png)
+![A piece by Azarias](../../assets/images/azarias1.png)
 
 **Which piece or series are you most proud of and why? Is there a story behind it?**
   
@@ -37,21 +37,21 @@ An interview with the talented artist from France, Azarias!
   
 >This little story shows two important things to me as an artist. First of all, ideas always come from a question I feel I have to answer. As Picasso said "I have a horror of people who speak about the beautiful. What is the beautiful? One must speak of problems in painting!". So it's very important to ask yourself the right questions. Second: art is always a matter of condensation. In this process, you see that ideas come from literature, psychoanalysis or mathematics and then you connect things in your own and unique way.
 
-![A piece by Azarias](azarias2.png)
+![A piece by Azarias](../../assets/images/azarias2.png)
 
 
 **What would you say is your main source of inspiration?**
   
 >If you pay enough attention to the world around you, everything is a source of inspiration. But to not elude the question, I'd say that, for my current work, I have drawn ideas from spatialism and organic architecture. With that being said, my main sources of inspiration don't come from art but philosophy, ethnology, sociology or psychology as I mentioned before.
 
-![A piece by Azarias](azarias3.png)
+![A piece by Azarias](../../assets/images/azarias3.png)
 
 
 **What are your favorite artist tools? What does your workflow look like?** 
   
 >My most valuable tool is definitely my sensibility. But don't be sensitive or emotional, it's a romantic trap a lot of artists fall into. As I said before, if you open up to the world around you, you'll be ready to respond to subtle stimuli that most of the people might not even notice.
 
-![A piece by Azarias](azarias4.png)
+![A piece by Azarias](../../assets/images/azarias4.png)
 
 
 **What are some pieces of advice you have for other artists?**  

@@ -9,7 +9,7 @@ tags:
   - guide
   - productivity
   - distraction
-ogImage: https://64.media.tumblr.com/aa503db06cee4c3b4cf120c7448a67c7/62ee42c8cd681c4f-ff/s500x750/ffd1d161e0aa39f0e06d9202dd36d5c40ae2fde0.jpg
+ogImage: ""
 description: Focusing tips for distractible artists
 ---
 A few tips to help you focus on your art in this distracting world!

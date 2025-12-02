@@ -4,7 +4,7 @@ author: 'A. Kufta'
 pubDatetime: 2019-09-10T17:00:00+00:00
 slug: artist-interview-with-rashaun-smith
 featured: false
-ogImage: calcucover.png
+ogImage: ""
 description: artist interview with Rashaun \"Calculact Cal\" Smith
 ---
 Be inspired by  Calculact Cal, an artist that has ventured into Card Game Design. Check out [calcucatcal.org](https://calcucatcal.org)
@@ -15,7 +15,7 @@ Be inspired by  Calculact Cal, an artist that has ventured into Card Game Design
 
 > I have so much to say but I will get to the point. I am Rashaun "Calculact Cal" Smith. I describe myself as being both an intellectual and an artist. That being I created a kind of Card Mind Game (CMG) that appeals to both the artist and his mind. It's simply called "5gamecards".
 
-![Calculact Cal](calcu1.png) 
+![Calculact Cal](../../assets/images/calcu1.png) 
 
  **When did you start making art?**
 

@@ -11,7 +11,7 @@ tags:
   - art help
   - challenge
   - art
-ogImage: coverlb.jpg
+ogImage: ""
 description: Can't think of ideas or looking for good drawing prompts? I challenge you with 219 things to draw 2019!
 ---
 Looking for great things to draw? I got you covered with 219 ideas of things to draw in 2019. Diversify your portfolio and sketches, and get outside of your comfort zone! I tag you all in this drawing challenge / idea list! 

@@ -13,7 +13,7 @@ An interview with the musical artist based in London.
 
 
 
-![Cash Checks Album Art](cashchecks.jpg)
+![Cash Checks Album Art](../../assets/images/cashchecks.jpg)
 
 Introducing Luke ATME, an upcoming musical artist with a growing resume of several accolades. He first started his career at 14 years old with cover music, mainly with an online audience. While in school, he participated in his hometown's  dance crew, which competed at Nationals. Additionally, he performed locally, showcasing both of his artistic abilities–song and dance.
 

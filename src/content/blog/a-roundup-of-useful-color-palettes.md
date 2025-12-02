@@ -14,8 +14,3 @@ tags:
 description: A Round Up of Useful Color Palettes
 ---
 
-
-
-![Image](png)
-
-*.*

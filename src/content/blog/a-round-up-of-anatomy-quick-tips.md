@@ -7,7 +7,7 @@ featured: false
 tags:
   - guide
   - anatomy
-ogImage: tumblr_oqzntejzup1rm7an6o1_1280.png
+ogImage: ""
 description: A collection of the anatomy tutorials I created to help artists how to draw more realistic people. Discussed resources on human anatomy for artists. I wrote a full anatomy masterpost, with great medical and artistic resources curated from around the web,
 ---
 

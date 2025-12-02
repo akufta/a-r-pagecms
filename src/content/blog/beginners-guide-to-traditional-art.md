@@ -17,7 +17,7 @@ tags:
   - guide
   - how to draw 
   - traditional art
-ogImage: photo-1459908676235-d5f02a50184b.jpeg
+ogImage: ""
 description: Are you a beginner wanting to learn traditional art but not sure where to start? Jump start your art journey today with these awesome, hand curated tips. 
 ---
 Learn traditional art as a beginner with these great resources and tutorials with advice on how to approach traditional art as a beginner. This article hopes to provide you quality information so you can learn how to drawn traditionally today, with advice on  materials, the different options you have with traditional art mediums, and  workflow. Learning how to draw can be daunting, but hopefully this guide helps to guide you in your studies.

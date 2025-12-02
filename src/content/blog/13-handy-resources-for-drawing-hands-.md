@@ -3,12 +3,12 @@ title: 13 awesome tutorials on how to draw hands
 author: 'A. Kufta'
 pubDatetime: 2017-12-25T10:20:10+00:00
 slug: 13-awesome-tutorials-on-how-to-draw-hands
-featured: false
+featured: true
 draft: false
 tags:
   - guide
   - anatomy
-ogImage: Screen Shot 2018-01-01 at 5.25.45 PM.png
+ogImage: ""
 description: 13 awesome tutorials on how to draw hands for beginners to help you on your quest to improve your anatomy drawing skills.
 ---
 A curated collection of 13 (hey that's lucky) helpful tutorials to help you learm how to draw hands. Several of these tutorials are targeted for beginners, because drawing hands can be a tricky subject for sure.

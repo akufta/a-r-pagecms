@@ -11,7 +11,7 @@ tags:
   - art help
   - guide
   - art
-ogImage: clock.jpg
+ogImage: ""
 description: time tips for time management and how to find time to get things done by an artist and college student
 ---
 As a busy university student with a lot of can be pretty hard to find time to create!

@@ -11,7 +11,7 @@ tags:
   - art help
   - interview
   - art
-ogImage: CPANFE.jpg
+ogImage: ""
 description: An interview with the skilled artist and blogger, Andrea Femerstrand.
 ---
 

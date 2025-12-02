@@ -17,7 +17,7 @@ tags:
   - vietnamese artist
   - art
   - interview
-ogImage: interviewcovercrop.jpg
+ogImage: ""
 description: Inspiring artist interview with the illustration and concept artist, Danvici who is from Ho Chi Minh , Vietnam.
 ---
 An artist interview with the amazing and inspirational  freelance concept artist and illustrator from Vietnam, Danh Nguyen. 

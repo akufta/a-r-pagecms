@@ -8,7 +8,7 @@ draft: false
 tags:
   - interview
   - artist
-ogImage: Jalai.png
+ogImage: ""
 description: An interview with the artist Jalai Lama
 ---
 
@@ -45,13 +45,13 @@ Learn about the lovely digital artist, Jalai Lama, with this interview!
 > I draw most of my inspiration from nature and the beauty of creation. Many of my artworks are infused with the elements of nature. Capturing the beauty of nature with my camera gives me all the ideas I need for the creation of my next piece.   
 >
 
-![Artwork of Jalai Lama](jailaiart1.jpeg) 
+![Artwork of Jalai Lama](../../assets/images/jalaiart1.jpeg) 
 
 #### What does art offer you? 
 
 >I feel the most free when I am creating art as I am in a place of surrender and infinite gratitude. Infusing these beautiful states of being into my creations gives birth to something magical.   
 
-![Artwork of Jalai Lama](jailaiart2.jpeg) 
+![Artwork of Jalai Lama](../../assets/images/jalaiart2.jpeg) 
 
 #### How does your artwork benefit or affect others? 
 

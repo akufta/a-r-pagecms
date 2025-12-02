@@ -8,7 +8,7 @@ draft: false
 tags:
   - interview
   - artist
-ogImage: Zelene.png
+ogImage: ""
 description: An interview with the mixed media artist, ​Zelene Schlosberg, based in Chicago
 ---
 
@@ -31,7 +31,7 @@ You can find Zelene's full gallery of artwork at her [portfolio](https://www.zel
 
 Hello, Art Enthusiasts of the World, my name is Zelene Schlosberg. I am a Chicago based artist working in mixed media, usually in smaller scale pieces. I was born in China and moved to the US in 2009, and I think you can see the influence of both cultures in my works. In addition to my own work, I love investigating the contemporary art scene here in Chicago, as well as on trips to New York and Los Angeles. 
 
-![Image](zelint1.jpg)
+![Image](../../assets/images/zelint1.jpg)
 
 *River Noir # 3, acrylic on Canvas with painted thread and river stone. Canvas (12x6 inches), one nail with hanging string and stone. Overall size: 12x10.5 inches* 
 
@@ -39,7 +39,7 @@ Hello, Art Enthusiasts of the World, my name is Zelene Schlosberg. I am a Chicag
 
 I started making art seriously in 2009. Art is a mirror or a profound document of what it means to live on our planet in our time. Like all of the arts (music, dance, etc), it speaks in a deep way to the human condition. I also feel the physical making of art, while exhausting and time consuming, has tremendously therapeutic value to the practitioner.
 
-![Image](zelint2.jpg)
+![Image](../../assets/images/zelint2.jpg)
 
 *HZE1, acrylic, thread and canvas on wood panels. 6.5x12x2.5 inches* 
 
@@ -47,7 +47,7 @@ I started making art seriously in 2009. Art is a mirror or a profound document o
 
 I think most artists would say that whatever art they are making at present is what they are most proud of, what they are most invested in, and that is the case with me. I have been reading a lot about art history and criticism, as well as delving deeply into Buddhist texts, and I feel like the current series represents my distillation and combining of these subjects.
 
-![Image](zelint3.jpg)
+![Image](../../assets/images/zelint3.jpg)
 
 *Impromptu, acrylic, thread, canvas piece and nails on wood panels. 8x16x1.5 inches* 
 
@@ -56,7 +56,7 @@ I think most artists would say that whatever art they are making at present is w
 
 My influences include traditional Chinese ink paintings and calligraphy, as well as the Buddhist writers that have impacted these artists. This year in particular, I embarked on an in-depth study of these writers. There was a time not too long ago where I was doing mostly thinking and reading, but now I am back to the creating process itself. Another influence has been contemporary classical music, which I have been exposed to quite a bit the last five years. The sheer variety of stylistic approaches, not to mention the technical virtuosity of the practioners, fascinates me. I was lucky to have a painting recently featured as the cover art for composer John Liberatore's debut CD album.
 
-![Image](zelint4.jpg)
+![Image](../../assets/images/zelint4.jpg)
 
 *Stage, thread on canvas. Two Panels: Left: 8x8 inches, Right: 8x8 inches. 8x16 inches* 
 

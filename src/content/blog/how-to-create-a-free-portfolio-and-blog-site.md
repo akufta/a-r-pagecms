@@ -12,7 +12,7 @@ tags:
   - how to
   - guide
   - art
-ogImage: coverlap.jpg
+ogImage: ""
 description: Learning how to draw is only part of the equation to make it as an artist. Learn how to create a serverless blog or site for free using free and open source software and tools
 ---
 Learn how to create a fast, secure site for free (without throttling!) using open source software.  

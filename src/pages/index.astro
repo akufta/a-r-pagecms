@@ -31,7 +31,7 @@ const getOgImageUrl = (ogImage) => {
 <Layout>
   <Header />
   <main id="main-content">
-    <section id="hero">
+    <section id="hero" class="hero-panel">
       <div align="center"><h1 style="margin:0 auto; font-size: 1.8em;">Welcome to Art-Res</h1>
       <a
         target="_blank"
@@ -49,7 +49,7 @@ const getOgImageUrl = (ogImage) => {
         </svg>
         <span class="sr-only">RSS Feed</span>
       </a></div>
-      <p class="hero-text">
+      <p class="hero-text" align="center">
         Interested in learning how to draw or improve your painting skills? I got you!  <br> Here you can find a consistently updated collection of useful resources, tutorials, and stock for artists!<br>
         Curated by hand and with love by <a class="start-here-line" href="https://instagram.com/akufta.art">Allison</a>.
       </p>
@@ -73,7 +73,15 @@ const getOgImageUrl = (ogImage) => {
           Subscribe to gain access to the newsletter, an invite to our community
           chat/critique nights, free resources, and more!
         </p>
-        <form class="newsletter-form" aria-label="Newsletter signup">
+        <form
+          class="newsletter-form"
+          aria-label="Newsletter signup"
+          id="newsletter-form"
+          name="contact"
+          method="post"
+          data-netlify="true"
+        >
+          <input type="hidden" name="form-name" value="contact" />
           <label class="sr-only" for="newsletter-email">Email address</label>
           <input
             id="newsletter-email"
@@ -84,6 +92,7 @@ const getOgImageUrl = (ogImage) => {
           />
           <button type="button">Join the community!</button>
         </form>
+        <div id="newsletter-status" class="newsletter-form__status" role="status" aria-live="polite"></div>
       </div>
     </section>
 
@@ -290,8 +299,27 @@ const getOgImageUrl = (ogImage) => {
 
     {
       featuredPosts.length > 0 &&
-        recentPosts.length > 0 && <Hr2 />
+        recentPosts.length > 0 && (
+          <>
+            <div class="all-posts-btn-wrapper">
+              <LinkButton
+                href="/posts/"
+                className="all-posts-btn focus-outline"
+                ariaLabel="View all posts"
+              >
+                <span>All Posts</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  ><path
+                    d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+                  ></path>
+                </svg>
+              </LinkButton>
+            </div>
+            <Hr2 />
+          </>
+        )
     }
+    
     {
       recentPosts.length > 0 && (
         <section id="recent-posts">
@@ -307,22 +335,12 @@ const getOgImageUrl = (ogImage) => {
                   />
                 )
             )}
-          </ul>
+          </ul><br>
         </section>
       )
     }
 
-    <div class="all-posts-btn-wrapper">
-      <LinkButton href="/posts/">
-        All Posts
-        <svg xmlns="http://www.w3.org/2000/svg"
-          ><path
-            d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-          ></path>
-        </svg>
-      </LinkButton>
-    </div>
-
+  
     
   </main>
 
@@ -347,10 +365,10 @@ const getOgImageUrl = (ogImage) => {
     @apply my-2;
   }
   .social-wrapper {
-    @apply mt-4 flex flex-col sm:flex-row sm:items-center;
+    @apply mt-4 flex flex-col items-center justify-center sm:flex-row sm:items-center sm:justify-center;
   }
   .social-links {
-    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+    @apply mb-1 mr-2 whitespace-nowrap text-center sm:mb-0;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
@@ -366,4 +384,82 @@ const getOgImageUrl = (ogImage) => {
     @apply my-5 text-center;
   }
 
+  .newsletter-form__status {
+    min-height: 1.1rem;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #5d47ff;
+  }
+  .newsletter-form__status--error {
+    color: #d44333;
+  }
+  .all-posts-btn-wrapper {
+    @apply my-5 text-center;
+  }
+  .all-posts-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] transition duration-300;
+    color: #fff;
+    background: linear-gradient(120deg, #a9a9ff, #7b63ff);
+   
+    letter-spacing: 0.14em;
+  }
+  .all-posts-btn:hover,
+  .all-posts-btn:focus-visible {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 9px 10px rgba(123, 99, 255, 0.45);
+  }
+  .all-posts-btn svg {
+    width: 1rem;
+    height: 1rem;
+    fill: currentColor;
+  }
+
 </style>
+
+<script is:inline>
+  (() => {
+    const form = document.getElementById("newsletter-form");
+    if (!form) return;
+    const statusEl = document.getElementById("newsletter-status");
+    const submitButton = form.querySelector("button[type=submit]");
+    const setStatus = (message, isError = false) => {
+      if (!statusEl) return;
+      statusEl.textContent = message;
+      statusEl.classList.toggle("newsletter-form__status--error", Boolean(isError));
+    };
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      if (!submitButton) return;
+
+      submitButton.disabled = true;
+      setStatus("Sending...");
+
+      const payload = new URLSearchParams(new FormData(form)).toString();
+
+      try {
+        const response = await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: payload,
+        });
+
+        if (!response.ok) {
+          throw new Error("Failed to submit");
+        }
+
+        setStatus("Thanks! Check your inbox for confirmation.");
+        form.reset();
+      } catch (error) {
+        console.error(error);
+        setStatus("Something went wrong. Please try again.", true);
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+  })();
+  </script>

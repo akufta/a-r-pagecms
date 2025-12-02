@@ -10,7 +10,7 @@ tags:
   - guide
   - anatomy
   - poses
-ogImage: If4nhRb.jpg
+ogImage: ""
 description: Learn how to draw engaging people with this guide to drawing better poses, with several awesome resources on human anatomy and dynamic movement.
 ---
 ## Importance of learning figure drawing

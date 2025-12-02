@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - guide
-ogImage: coffeechatcov.jpg
+ogImage: ""
 description: artist coffee chat, exploring creative routines
 ---
 

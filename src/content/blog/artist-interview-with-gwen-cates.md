@@ -8,7 +8,7 @@ draft: false
 tags:
   - artist 
   - interview
-ogImage: gwencover.png
+ogImage: ""
 description: Artist Interview with Gwen Cates
 ---
 
@@ -37,20 +37,20 @@ I believe success takes dedication and many hours in the art studio. Over the ye
 
 People in more rural settings seem to enjoy landscapes of the area in which they live, often saying they had never seen such bright colors in the mountains, sea or meadows before. Cosmopolitan areas tend to be drawn to my abstract and mytho-poetic paintings, and also to landscapes. My current exhibit is a mixture of landscape (or universe-scapes) with multidimensional abstract ideas about Black Holes, Exoplanets and stars that may invite the viewer into their own Cosmic Monologue!
 
-![Artist Interview of Gwen Cates](gwenc2.jpg) 
+![Artist Interview of Gwen Cates](../../assets/images/gwenc2.jpg) 
 
 
 #### Can you describe what inspires you about the exoplanets and how you relate to black holes?
 
 > A while back, I painted a small painting called, Launch to Planet X. Then I began to read about Exoplanets, which are planets in distant galaxies that are believed capable of supporting life similar to life on earth. I did some large abstract collage pieces that explore the concept that life may have been launched to earth from another planet or, conversely, that life may have originated on this planet and might be launched to an Exoplanet. Two of those paintings are in my exhibit. They led to my discovery and interest in Black Holes and the idea that they may indeed be engines of the universe. The concept of Black Holes was only a theory, but suddenly this year there were amazing photographs and videos of the Event Horizons of Black Holes that made them visible for the first time. I wanted to create my own abstract interpretation of the phenomena that I had been reading and hearing about. The act of painting helps me make discoveries that invite me to see the world in a new way. Once I begin putting brush to canvas, I find that I can say things with paint that I could not otherwise imagine.
 
-![Artist Interview of Gwen Cates](gwenc1.jpg) 
+![Artist Interview of Gwen Cates](../../assets/images/gwenc1.jpg) 
 
 #### Are your own personal dreams ever an inspiration for your artwork?
 
 > Often I am inspired by apparitions that appear unexpectedly as if in a waking dream. A few years ago, I was inspired by a vision of light in the shape of a vortex that appeared repeatedly on my living room wall in Virginia. It appeared to come from the skylight in the ceiling above, and I did a charcoal drawing of it. Once I did the drawing, the shape disappeared from the wall and I realized that I had received a gift. I interpreted it as an archetypal image, a cage built of streams of light, which later evolved to include winged beings. I included vortexes of light in my next collection of paintings, which was appropriately named _The Vortex Series._
 
-![Artist Interview of Gwen Cates](gwenc3.jpg) 
+![Artist Interview of Gwen Cates](../../assets/images/gwenc3.jpg) 
 
 
 #### Your abstract paintings often contain collage elements. What is the thought process behind choosing those elements for each artwork piece?

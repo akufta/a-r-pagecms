@@ -4,14 +4,14 @@ author: 'A. Kufta'
 pubDatetime: 2019-09-04T05:01:00+00:00
 slug: artist-interview-with-nickels
 featured: false
-ogImage: nickelscover.png
+ogImage: ""
 description: interview with the artist, Nicholas King aka Nickels
 ---
 Introducing  Nicholas King aka Nickels, creative director who specializes in computer graphics animation. 
 
 
 
-![Portrait of Nickels / Nicholas King](Nickels1.jpg) 
+![Portrait of Nickels / Nicholas King](../../assets/images/Nickels1.jpg) 
 
 #### It’s a pleasure having your attention to talk with us. Can you briefly describe your background, where you’re from, how you got started in the industry?
 

@@ -13,7 +13,7 @@ tags:
   - guide
   - art
   - community
-ogImage: comsoc.jpg
+ogImage: ""
 description: Learn how to become seen on social media channels. These social media tips were submitted by Art-Res art resources community. 
 ---
 Social media is an important part of artistic marketing. Though you should not measure your worth in social media followers, it's very helpful to have a social networking presence in order to promote your work!

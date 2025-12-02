@@ -6,7 +6,7 @@ slug: graphic-monitor-drawing-tablet-review-artisul-d13s
 featured: false
 tags:
   - review
-ogImage: artisulcover.png
+ogImage: ""
 description: Looking for a quality, inexpensive Cintiq competitor? Here is my review of the drawing monitor by Artisul, the D13S.
 ---
 
@@ -78,19 +78,19 @@ Consider checking them out on social media: [instagram](https://www.instagram.co
 
 Unboxing photos & pictures of accessories, feat my rug!
 
-![Review Photo of Artisul D13S](artisulrev13.jpg)
+![Review Photo of Artisul D13S](../../assets/images/artisulrev13.jpg)
 
-![Review Photo of Artisul D13S](artisulrev4.jpg)
+![Review Photo of Artisul D13S](../../assets/images/artisulrev4.jpg)
 
-![Review Photo of Artisul D13S](artisulrev5.jpg)
+![Review Photo of Artisul D13S](../../assets/images/artisulrev5.jpg)
 
-![Review Photo of Artisul D13S](artisulrev9.jpg)
+![Review Photo of Artisul D13S](../../assets/images/artisulrev9.jpg)
 
-![Review Photo of Artisul D13S](artisulrev10.jpg)
+![Review Photo of Artisul D13S](../../assets/images/artisulrev10.jpg)
 
 ## Form & Function
 
-![Review Photo of Artisul D13S](artisulrev12.jpg)
+![Review Photo of Artisul D13S](../../assets/images/artisulrev12.jpg)
 
 The tablet is relatively thin and light, which is a definite plus in my book. The corners are rounded and the whole unit seems to be well constructed and sturdy.
 
@@ -140,7 +140,7 @@ One thing I wish it had tilt and rotation, but at this price point, the pen and 
 
 Not everyone is, but I am a huge fan of the scroll dial (and the 6 customizable express keys). I think it’s a great way to change brush sizes. You can also click it rapidly to change what the scroll dial does, up to 5 total options.  I mostly use it for brush size & zoom, but you have options!
 
-![Review Photo of Artisul D13S](artisulrev11.jpg)
+![Review Photo of Artisul D13S](../../assets/images/artisulrev11.jpg)
 
 It's easy and smooth to turn, and you have clickiness that allows you to feel and control it without looking.
 

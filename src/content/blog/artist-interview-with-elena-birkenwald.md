@@ -7,7 +7,7 @@ featured: false
 tags:
   - interview
   - artist
-ogImage: elenacover.png
+ogImage: ""
 description: Inspiring artist interview with the artist, Elena Birkenwald
 ---
 An interview with the lovely, contemporary artist, Elena Birkenwald!

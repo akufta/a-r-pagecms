@@ -6,7 +6,7 @@ slug: artist-interview-with-author-brian-finney
 featured: false
 tags:
   - interview
-ogImage: bfinney.png
+ogImage: ""
 description: Artist interview with the author Brian Finney
 ---
 Artist interview with the author, artist, and professor Brian Finney.

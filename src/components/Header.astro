@@ -25,15 +25,12 @@ const { activeNav } = Astro.props;
           ) : (
             SITE.title
           )
-        }
-      </a>
-     <!---toggle on or off text header<a style="margin-left: 1%" href="/" class="logo whitespace-nowrap">
-        {(
-            SITE.title
-          )
-        }
+        } 
       </a> 
-      --> 
+     <!---toggle on or off text header -->  <a style="text-transform: uppercase; margin-left:1%"  href="/" class="logo whitespace-nowrap">
+        Art Resources & Tutorials
+      </a> 
+     
       <nav id="nav-menu">
         <button
           class="hamburger-menu focus-outline"
@@ -85,6 +82,29 @@ const { activeNav } = Astro.props;
             <a class="activeNav" href="https://mailchi.mp/a190fe0b4975/art-res">
               Newsletter
             </a>
+          </li>
+          <li class="tools-nav">
+            <details>
+              <summary aria-haspopup="true" aria-expanded="false">
+                Tools
+              </summary>
+              <div class="tools-submenu">
+                <a
+                  href="https://fairpaycalc.artres.xyz/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Fair Pay Calculator
+                </a>
+                <a
+                  href="https://artres.xyz/ideas"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Idea Generator
+                </a>
+              </div>
+            </details>
           </li>
         
        
@@ -147,7 +167,7 @@ const { activeNav } = Astro.props;
     @apply absolute -top-full left-16 z-50 bg-skin-accent px-2 py-2 text-skin-inverted transition-all focus:top-4;
   }
   .nav-container {
-    @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
+    @apply mx-auto flex max-w-5xl flex-col items-center justify-between sm:flex-row;
   }
   .top-nav-wrap {
     @apply relative flex w-full items-center justify-between px-3 py-2 sm:px-0 sm:py-2;
@@ -212,6 +232,49 @@ const { activeNav } = Astro.props;
   }
   nav a.active svg {
     @apply fill-skin-accent;
+  }
+
+  .tools-nav {
+    position: relative;
+  }
+  .tools-nav details {
+    position: relative;
+  }
+  .tools-nav summary {
+    cursor: pointer;
+    font-weight: 600;
+    @apply relative px-3 py-2 uppercase text-center font-semibold text-base text-slate-900 transition duration-300;
+    background: transparent;
+  }
+  .tools-nav summary::marker {
+    font-size: 0.7em;
+    margin: 1%;
+  }
+  .tools-submenu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: #ffffff;
+    border-radius: 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    box-shadow: 0 10px 30px -20px rgba(0, 0, 0, 0.25);
+    min-width: 180px;
+    z-index: 20;
+  }
+  .tools-submenu a {
+    text-transform: none;
+    color: #1f1b2d;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.2rem;
+  }
+  .tools-submenu a:hover,
+  .tools-submenu a:focus-visible {
+    background: rgba(31, 27, 45, 0.08);
   }
 
   nav button {

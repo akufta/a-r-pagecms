@@ -7,7 +7,7 @@ featured: false
 tags:
   - guide
   - marketing
-ogImage: photo-1440337386388-f5fd01e85bd5.jpeg
+ogImage: ""
 description: Side hustler or freelancer? Want to make money off of your art or creative blog? Learn how with these great resources.
 ---
 Learn to market your art & or blog in a way that leads to sustainable growth and sales with these helpful marketing tips.

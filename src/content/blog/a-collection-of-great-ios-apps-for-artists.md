@@ -8,7 +8,7 @@ tags:
   - guide
   - apps
   - masterpost
-ogImage: photo-1464380573004-8ca85a08751a.jpeg
+ogImage: ""
 description: My favorite iOS apps for artists! This collection includes art reference apps, photo editor apps, writing apps, and painting and design apps!
 ---
 

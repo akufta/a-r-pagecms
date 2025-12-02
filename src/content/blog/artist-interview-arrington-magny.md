@@ -11,7 +11,6 @@ tags:
   - art help
   - interview
   - art
-ogImage: arringtoncover.png
 description: Inspiring artist interview with the artist, Arrington Magny. 
 ---
 An interview with the talented and award winning contemporary fine artist, Arrington Magny!
@@ -42,7 +41,7 @@ She can also be found on <a href="https://www.galerieboa.com/arrington">Galerieb
 
 > My path towards art making as a vocation was certainly not linear.  As one profoundly curious by nature, it was never easy to settle on a single subject of study.  Thus, my formal study of the arts is multidisciplinary, spread and sprinkled over time and space.  
 
-![A wonderful abstract painting by Arrington Magny](arring1.jpg)
+![A wonderful abstract painting by Arrington Magny](../../assets/images/arring1.jpg)
 
 **What is  latest series and the story behind it?**  
 
@@ -67,14 +66,14 @@ She can also be found on <a href="https://www.galerieboa.com/arrington">Galerieb
 >In the paintings are nautical references: small boats, clouds, storms; general allusions to the topos of nostos.  There are also words, lines of poetry, and circles within circles, as references to the universal, philosophical concepts, as well as rudimentary sketches of specific places intimating my own personal nostos.
 
 
-![A wonderful abstract painting by Arrington Magny](arring2.jpg)
+![A wonderful abstract painting by Arrington Magny](../../assets/images/arring2.jpg)
 
 **What are some of your favorite artist tools?**
 
 >My hands!  
 
 
-![A wonderful abstract painting by Arrington Magny](arring3.jpg)
+![A wonderful abstract painting by Arrington Magny](../../assets/images/arring3.jpg)
 
 **What inspires you and how does it impact your style and method of painting?**
 
@@ -87,7 +86,7 @@ She can also be found on <a href="https://www.galerieboa.com/arrington">Galerieb
 >In brief, I would much rather whisper sincerely to you, than to scream.
 
 
-![A wonderful abstract painting by Arrington Magny](arring4.jpg)
+![A wonderful abstract painting by Arrington Magny](../../assets/images/arring4.jpg)
 
 
 **What are some pieces of advice you have for other artists?**

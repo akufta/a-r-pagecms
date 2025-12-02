@@ -5,7 +5,7 @@ pubDatetime: 2021-02-27T18:00:00Z
 slug: artist-interview-with-jasmine-carter-corvushound
 featured: false
 draft: false
-ogImage: corvus.png
+ogImage: ""
 description: Interview with Jasmine Carter, also known as Corvus hound
 ---
 

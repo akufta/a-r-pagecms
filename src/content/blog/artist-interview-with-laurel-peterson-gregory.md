@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - interview
-ogImage: bronzecover.png
+ogImage: ""
 description: Artist Interview with Laurel Peterson Gregory
 ---
 Artist Interview with the sculptor Laurel Peterson Gregory, based in Denver, CO.
@@ -22,13 +22,13 @@ Artist Interview with the sculptor Laurel Peterson Gregory, based in Denver, CO.
 >
 > My [bronze animal sculptures](https://laurelpetersongregory.com/desk-buddies/) have received multiple awards and are represented by galleries across the United States. I have fulfilled numerous private, corporate, and public commissions.
 
-![Bronze Sculpture by Laurel Peterson Gregory](bronzelpg2.jpg) 
+![Bronze Sculpture by Laurel Peterson Gregory](../../assets/images/bronzelpg2.jpg) 
 
 ##### When did you start making art?
 
 > My sculptures are my megaphone to the world. I don't see it simply as a profession, I believe crating my sculptures are my life's purpose. Since I became a professional artist later on in my life I have buckets of life experience to express thru my art When folks are drawn to my work  I see them connecting not only to the beauty of the piece, but also to the story and emotional content. My pieces evoke a variety of emotional and intellectual experiences from joy and laughter to stillness and mystery.
 
-![Bronze Sculpture by Laurel Peterson Gregory](bronzelpg3.jpg) 
+![Bronze Sculpture by Laurel Peterson Gregory](../../assets/images/bronzelpg3.jpg) 
 
 ##### Which piece or series are you most proud of and why? Is there a story behind it?
 
@@ -40,7 +40,7 @@ Artist Interview with the sculptor Laurel Peterson Gregory, based in Denver, CO.
 >
 > My strong intention in designing the statue was that it would be truly unique and not just as another rearing horse. As it turns you can see all of the sensuous and graceful curves that express the movement and strength required for the horse to accomplish such a feat._Ode to Joy_is perfectly balanced, as a horse would need to be in order to accomplish this move. When it is not attached to a base the sculpture does indeed stand upright on its single hoof.
 
-![Bronze Sculpture by Laurel Peterson Gregory](bronzelpg1.jpg) 
+![Bronze Sculpture by Laurel Peterson Gregory](../../assets/images/bronzelpg1.jpg) 
 
 ##### What would you say is your main source of inspiration?
 
@@ -48,7 +48,7 @@ Artist Interview with the sculptor Laurel Peterson Gregory, based in Denver, CO.
 >
 > My other inspiration is my joyful life with my husband Jeff. He makes me laugh, fills me with love and helps me feel comfy in my skin. My boy Brian and Girl Rosie also are inspirations. You simply can't look at a Corgi and not get a smile on your face. Rose has the ability to hold the energy of pure calm and being in the moment. When I'm stressed all I have to do is think of Rose draped across the couch and it puts things in perspective.
 
-![Bronze Sculpture by Laurel Peterson Gregory](bronzelpg4.jpg) 
+![Bronze Sculpture by Laurel Peterson Gregory](../../assets/images/bronzelpg4.jpg) 
 
 ##### What are your favorite artist tools? What does your workflow look like?
 

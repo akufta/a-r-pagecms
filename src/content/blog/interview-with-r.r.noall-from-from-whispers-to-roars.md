@@ -11,7 +11,7 @@ tags:
   - art help
   - interview
   - art
-ogImage: https://images.submittable.com/s3/publisher-files.submittable.com/16877/submit-header.jpg?width=982&height=220&mode=crop&anchor=middlecenter&v=1517327428
+ogImage: ""
 description: Interview with art magazine creator R.R. Noall about From Whispers to Roars
 ---
 Learn more about the art magazine From Whispers to Roars from  R.R. Noall, which is currently looking for submissions!

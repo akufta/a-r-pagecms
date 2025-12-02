@@ -6,7 +6,7 @@ slug: artist-interview-with-renøyr
 featured: false
 tags:
   - interview
-ogImage: renoyr.jpg
+ogImage: ""
 description: An artist interview with Renoyr, a painter, DJ, composter, and happy husband. 
 ---
 Be inspired by  Renøyr, a creator that dabbles in a few different mediums!

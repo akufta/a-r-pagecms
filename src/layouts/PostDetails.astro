@@ -53,9 +53,9 @@ const layoutProps = {
     <div class="progress-bar h-1 w-0 bg-skin-accent" id="myBar"></div>
   </div> -->
 
-  <div class="mx-auto flex w-full max-w-3xl justify-start px-2">
+  <div class="post-back">
     <button
-      class="focus-outline mb-2 mt-8 flex hover:opacity-75"
+      class="focus-outline go-back-btn"
       onclick="(() => (history.length === 1) ? window.location = '/' : history.back())()"
     >
       <svg xmlns="http://www.w3.org/2000/svg"
@@ -66,13 +66,15 @@ const layoutProps = {
     </button>
   </div>
   <main id="main-content">
-    <h1 transition:name={slugifyStr(title)} class="post-title">{title}</h1>
-    <Datetime
-      pubDatetime={pubDatetime}
-      modDatetime={modDatetime}
-      size="lg"
-      className="my-2"
-    />
+    <div class="post-header">
+      <h1 transition:name={slugifyStr(title)} class="post-title">{title}</h1>
+      <Datetime
+        pubDatetime={pubDatetime}
+        modDatetime={modDatetime}
+        size="lg"
+        className="my-2"
+      />
+    </div>
     <div class="post-layout">
       <article
         id="article"
@@ -91,7 +93,7 @@ const layoutProps = {
       </aside>
     </div>
 
-    <ul class="my-8">
+    <ul class="post-tags tag-cloud">
       {tags.map(tag => <Tag tag={slugifyStr(tag)} />)}
     </ul>
 
@@ -123,6 +125,24 @@ const layoutProps = {
   .post-title {
     @apply text-2xl font-semibold text-skin-accent;
   }
+  .post-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .post-header--center {
+    align-items: center;
+    text-align: center;
+  }
+  .post-back {
+    @apply mx-auto flex w-full max-w-5xl items-start justify-start px-4;
+    margin-top: 1rem;
+  }
+  .go-back-btn {
+    @apply mb-0 flex items-center gap-2 hover:opacity-80;
+    margin: 0;
+    padding: 0;
+  }
   .post-layout {
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(200px, 0.25fr);
@@ -133,11 +153,18 @@ const layoutProps = {
     max-width: 100% !important;
     width: 100%;
   }
+  .post-layout--no-toc .post-article {
+    max-width: 700px;
+    margin-inline: auto;
+  }
   .post-article :is(p, figure, blockquote, img, table, pre) {
     width: 100%;
   }
   .post-toc {
     display: none;
+  }
+  .post-toc--hidden {
+    display: none !important;
   }
   .post-toc__sticky {
     position: sticky;
@@ -205,6 +232,9 @@ const layoutProps = {
   @media (min-width: 1024px) {
     .post-toc {
       display: block;
+    }
+    .post-layout--no-toc {
+      grid-template-columns: 1fr;
     }
   }
   @media (max-width: 1023px) {
@@ -288,15 +318,23 @@ const layoutProps = {
   function buildToc() {
     const tocList = document.getElementById("toc-list");
     if (!tocList) return;
+    const postLayout = document.querySelector(".post-layout");
+    const postToc = document.querySelector(".post-toc");
+    const postHeader = document.querySelector(".post-header");
     const headings = Array.from(
       document.querySelectorAll("#article h2, #article h3")
     );
     if (!headings.length) {
-      tocList.innerHTML =
-        '<li class="post-toc__empty">No sections available.</li>';
+      tocList.innerHTML = "";
+      postLayout?.classList.add("post-layout--no-toc");
+      postToc?.classList.add("post-toc--hidden");
+      postHeader?.classList.add("post-header--center");
       return;
     }
     tocList.innerHTML = "";
+    postLayout?.classList.remove("post-layout--no-toc");
+    postToc?.classList.remove("post-toc--hidden");
+    postHeader?.classList.remove("post-header--center");
     headings.forEach((heading) => {
       if (!heading.id) {
         heading.id = generateId(heading.textContent ?? heading.innerText);

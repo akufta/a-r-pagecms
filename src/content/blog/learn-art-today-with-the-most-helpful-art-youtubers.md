@@ -8,7 +8,7 @@ tags:
   - youtube
   - videos
   - learning
-ogImage: youtubecov.png
+ogImage: ""
 description: Learn how to draw from the guidance of great youtubers. These channels contain helpful art tutorial videos.
 ---
 YouTube is a great way to learn and improve your artistic abilities and skills for free.

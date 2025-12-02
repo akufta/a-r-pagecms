@@ -7,7 +7,7 @@ featured: false
 tags:
   - masterpost
   - art theory
-ogImage: italian-landscape-mountains-nature.jpg
+ogImage: ""
 description: A masterpost of  30 + resources to help you draw and paint beautiful landscapes, environments, and backgrounds.
 ---
 Learning to draw beautiful, expressive backgrounds, environments, landscapes is a wonderful skill that will help you become a more well rounded artist. This skill requires you to understand how different components integrate in space. This means sharpening up those **composition, perspective, color theory, and value skills**. 

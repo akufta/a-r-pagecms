@@ -4,11 +4,12 @@ author: 'A. Kufta'
 pubDatetime: 2018-12-26T06:00:00+00:00
 slug: artists-guide-to-perspective
 featured: false
+draft: true
 tags:
   - guide
   - art-theory
   - masterpost
-ogImage: perspectivecov.png
+ogImage: ""
 description: Learn how to draw things in perspective with this art theory guide for artists. Drawing buildings, environments and realistic subjects all require an understanding of this topic.
 ---
 
@@ -36,8 +37,6 @@ When practicing, definitely try drawing in a few boxes or objects to see if you 
 
 ## One Point Perspective
 
-![one point perspective](perspective1.jpeg)
-
 Here we have one point perspective, only one vanishing point.
 
 Draw in that horizon line first and then place your vanishing point to wherever you want on that horizon line.
@@ -49,8 +48,6 @@ In real life, imagine a road vanishing off into the distance (like those motivat
 ![one point perspective picture](https://images.unsplash.com/photo-1514900140332-7a8d96a7f4f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80)
 
 ## Two Point Perspective
-
-![two point perspective](perspective2.jpeg)
 
 And now we have two vanishing points on the horizon!
 
@@ -64,7 +61,6 @@ In real life, you often can see this perspective exemplified from photographs of
 
 ## Three Point Perspective
 
-![three point perspective](perspective3.jpeg)
 
 Quite similar to two point perspective but consider a third vanishing point above or below the horizon, which results in rather dramatic two views: bird's eye & "worm's" view.
 

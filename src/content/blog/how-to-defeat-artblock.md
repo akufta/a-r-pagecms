@@ -13,7 +13,7 @@ tags:
   - guide
   - art
   - artists block
-ogImage: artblock.jpg
+ogImage: ""
 description: Learn how to brainstorm ideas and avoid artists block and writers block!
 ---
 Feeling unispired? Don't let artist block or writers block get the best of you. You've got this! Here are some brainstorming techniques for you to try.

@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - artist interview
-ogImage: bettiewildecover.png
+ogImage: ""
 description: Artist interview with Bettie Wilde, a figurative artist from Washington.
 ---
 Introducing [Bettie Wilde](https://www.bettiewilde.com), a figurative artist with a beautiful collection of work. She is based in Everett, Washington.
@@ -16,7 +16,7 @@ Introducing [Bettie Wilde](https://www.bettiewilde.com), a figurative artist wit
 
  
 
-![Artwork by Bettie Wilde](bettiewilde1.jpeg)
+![Artwork by Bettie Wilde](../../assets/images/bettiewilde1.jpeg)
 
 ### What would you say is your main source of inspiration?
 
@@ -29,25 +29,25 @@ Emotions, I can't get away from them unless I throw them into a painting. Then I
 ![All The Pretty Flowers by Bettie Wilde](https://tva1.sinaimg.cn/large/0081Kckwly1gljp685ym8j30og1124qp.jpg) 
 
  
-![Artwork by Bettie Wilde](bettiewilde3.jpg)
+![Artwork by Bettie Wilde](../../assets/images/bettiewilde3.jpg)
 
 ### When did you start making art? What does art offer you?
 
 I started painting as a child. My mother loved when I painted and it was the one thing that her and I connected on. I started painting feverishly, upset I didn’t do it when she was alive. Quarantine really gave me the time and place to really hash out what I was feeling. For me art is my voice. I can’t tell you in the same depth all that I feel without using a visual medium. You can’t lie in your art, the truth bleeds through.
 
-![Artwork by Bettie Wilde](bettiewilde4.jpg)
+![Artwork by Bettie Wilde](../../assets/images/bettiewilde4.jpg)
 
 ### Is there a story behind one of your works you would like to share?
 
 The day my book launched I received the news that my mother passed away. I was struck down with enormous grief. I did the only thing I knew to do was to paint and my series [*Obsolete*](https://www.bettiewilde.com/obsolete-paintings) was born. I wasn’t able to see my mother and never got to say good-bye. She died alone in quarantine. 
 
-![Artwork by Bettie Wilde](bettiewilde5.jpg)
+![Artwork by Bettie Wilde](../../assets/images/bettiewilde5.jpg)
 
 ### What are some pieces of advice you have for other artists?
 
 Stop trying to be perfect. Get messy, get as ugly as you can be and then step back.
 
-![Artwork by Bettie Wilde](bettiewilde6.jpg)
+![Artwork by Bettie Wilde](../../assets/images/bettiewilde6.jpg)
 
 ### Do you have any favorite resources for learning art?
 
@@ -55,9 +55,9 @@ Paint every day! I am inspired by other artists, now you can find so many wonder
 
 The Wandering Muse was a course I took of Jeanne Oliver and it taught me to be myself. It was the first time I saw myself in my work.
 
-![Artwork by Bettie Wilde](bettiewilde7.jpg)
+![Artwork by Bettie Wilde](../../assets/images/bettiewilde7.jpg)
 
-![Artwork by Bettie Wilde](bettiewilde8.jpg) 
+![Artwork by Bettie Wilde](../../assets/images/bettiewilde8.jpg) 
 
  
 

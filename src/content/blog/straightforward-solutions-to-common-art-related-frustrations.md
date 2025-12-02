@@ -6,7 +6,7 @@ slug: straightforward-solutions-to-common-art-related-frustrations
 featured: false
 tags:
   - guide
-ogImage: solutions.png
+ogImage: ""
 description: Straightforward Solutions to Common, Art Related Frustrations 
 ---
 I created a thread asking what frustrations you all had related to art and  answered them to the best of my ability. I hope you find some of these solutions helpful!

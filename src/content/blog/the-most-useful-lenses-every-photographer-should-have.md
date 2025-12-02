@@ -33,7 +33,7 @@ tags:
   - dslr buying guide
   - lenses for nikon
   - photography lenses
-ogImage: B2VfCBM.png
+ogImage: ""
 description: A collection of great camera lenses for any photographer looking to step up their game.
 ---
 A curated collection of the first lenses you should consider purchasing as a photographer. These lenses are fairly inexpensive and well reviewed, and great bang for your buck! I also own most of these. 

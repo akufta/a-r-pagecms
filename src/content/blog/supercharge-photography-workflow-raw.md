@@ -13,7 +13,7 @@ tags:
   - raw
   - guide
   - art
-ogImage: coverraw.jpg
+ogImage: ""
 description: What is RAW photography and how will it help you supercharge your photography? Here is a list of great resources and tips. 
 ---
 Learn the benefits and definition of RAW photography and how to implement it into your photography workflow. 
@@ -33,7 +33,7 @@ If you want a lot of detail, read this in depth article about the [RAW image for
 
 Here's a RAW photography before and after shot to show you the capabilities of the RAW format:
 
-![Image](baa.jpg)
+![Image](../../assets/images/baa.jpg)
 
 *My turtle modeling the awesome powers of RAW*
 
