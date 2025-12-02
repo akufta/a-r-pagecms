@@ -4,9 +4,11 @@ import Layout from "@layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
-import Hr from "@components/Hr.astro";
+
+import Hr2 from "@components/Hr2.astro"
 import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
+import Datetime from "@components/Datetime";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
 
@@ -17,13 +19,20 @@ const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
 const socialCount = SOCIALS.filter(social => social.active).length;
+
+const getOgImageUrl = (ogImage) => {
+  if (!ogImage) return null;
+  if (typeof ogImage === "string") return ogImage;
+  if (ogImage?.src) return ogImage.src;
+  return null;
+};
 ---
 
 <Layout>
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Mingalaba</h1>
+      <h1 style="font-size: 2em">Welcome to Art-Res</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -42,10 +51,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive, accessible and SEO-friendly Astro
-        blog theme. This theme follows best practices and provides accessibility
-        out of the box. Light and dark mode are supported by default. Moreover,
-        additional color schemes can also be configured.
+        Interested in learning how to draw or improve your painting skills? I got you!  <br> Here you can find a consistently updated collection of useful resources, tutorials, and stock for artists!<br>
+        Curated by hand and with love by <a href="https://instagram.com/akufta.art">Allison</a>.
+  
       </p>
       <p>
         Read the blog posts or check
@@ -60,39 +68,259 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
+            <div class="social-links">Let's connect:</div>
             <Socials />
           </div>
         )
       }
+          <Hr2 />
     </section>
 
-    <Hr />
+    <section class="panel-card newsletter-card">
+      <div>
+        <h3>Join the Art-Res Family</h3>
+        <hr class="Hr2" style="py-3" aria-hidden="true"></div>
+        <p> <br>
+          Subscribe to gain access to the newsletter, an invite to our community
+          chat/critique nights, free resources, and more!
+        </p>
+        <form class="newsletter-form" aria-label="Newsletter signup">
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input
+            id="newsletter-email"
+            name="email"
+            type="email"
+            placeholder="your@email.com"
+            required
+          />
+          <button type="button">Join the community!</button>
+        </form>
+      </div>
+    </section>
 
+    <section class="panel-card start-here-card">
+      <div>
+        <h3>Start Here!</h3>
+        <p>
+          <strong>Art-Res Anatomy E-Book!</strong>
+          (
+          <a
+            href="https://artres.xyz/shop"
+            target="_blank"
+            rel="noreferrer"
+          >
+            more details
+          </a>
+          //
+          )
+          + other
+          <strong>
+            <a
+              href="https://artres.xyz/shop"
+              target="_blank"
+              rel="noreferrer"
+            >
+              premium content
+            </a>
+          </strong>
+        </p>
+        <p class="start-here-line">
+          <i>Artist Guides to:</i>
+          <a
+            href="https://artres.xyz/post/beginners-guide-to-digital-art/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            digital art
+          </a>
+          ,
+          <a
+            href="https://artres.xyz/post/beginners-guide-to-traditional-art/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            traditional art
+          </a>
+          , and
+          <a
+            href="https://artres.xyz/post/ultimate-guide-to-photography/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            photography
+          </a>
+        </p>
+        <p class="start-here-line">
+          <i>Art Fundamentals:</i>
+          <a
+            href="https://artres.xyz/post/wonderful-resources-to-master-color-theory/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            color theory
+          </a>
+          ,
+          <a
+            href="https://artres.xyz/post/a-round-up-of-anatomy-quick-tips/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            anatomy
+          </a>
+          ,
+          <a
+            href="https://artres.xyz/post/artists-guide-to-perspective/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            perspective
+          </a>
+          ,
+          <a
+            href="https://artres.xyz/post/ultimate-guide-to-composition/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            composition
+          </a>
+        </p>
+        <p class="start-here-line">
+          <a
+            href="https://artres.xyz/post/masterpost-of-wonderful-high-quality-art-supplies/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Art Supply Recommendations
+          </a>
+          &
+          <a
+            href="https://artres.xyz/post/wonderful-art-resources-books-masterpost/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Art Book Recommendations
+          </a>
+        </p>
+        <p class="start-here-line">
+          <a
+            href="https://artres.xyz/post/how-to-create-a-free-portfolio-and-blog-site/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            How to create a portfolio
+          </a>
+          &
+          <a
+            href="https://artres.xyz/post/learn-how-to-market-your-art-the-right-way/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            market your art
+          </a>
+        </p>
+        <p class="start-here-line">
+          <a
+            href="https://artres.xyz/post/start-creating-beautiful-things-with-these-fantastic-free-and-open-source-software-programs/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Free & Open Source Art Programs
+          </a>
+        </p>
+        <div class="buy-coffee-wrapper">
+          <a
+            class="buy-coffee"
+            href="https://www.buymeacoffee.com/aky"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
+              alt="Buy me a coffee"
+            />
+            <span>Buy me a coffee</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel-card inspiration-card">
+      <div>
+        <h3>Need some inspiration?</h3>
+        <p>I got you! Check out these Artist Utilities!</p>
+        <div class="inspiration-grid">
+          <a
+            class="inspiration-link"
+            href="https://artres.xyz/ideas"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Idea Generator
+          </a>
+          <a
+            class="inspiration-link"
+            href="https://artres.xyz/references"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Reference Boards
+          </a>
+          <a
+            class="inspiration-link"
+            href="https://artres.xyz/needcolors"
+            rel="noreferrer"
+            target="_blank"
+          >
+            Color Palettes
+          </a>
+        </div>
+      </div>
+    </section>
     {
       featuredPosts.length > 0 && (
-        <>
-          <section id="featured">
+        <section id="featured">
+          <div class="featured-heading">
             <h2>Featured</h2>
-            <ul>
-              {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/posts/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
-          </section>
-          {recentPosts.length > 0 && <Hr />}
-        </>
+            <p>Curated reading from the Art-Res archive.</p>
+          </div>
+          <div class="featured-grid">
+            {featuredPosts.map(({ data, slug }) => {
+              const imageUrl = getOgImageUrl(data.ogImage);
+              return (
+                <article class="featured-card">
+                  <div
+                    class={`featured-media ${imageUrl ? "" : "featured-media--placeholder"}`}
+                    style={imageUrl ? `background-image:url(${imageUrl});` : undefined}
+                    aria-hidden="true"
+                  />
+                  <div class="featured-card__content">
+                    <h3>
+                      <a href={`/posts/${slug}/`}>{data.title}</a>
+                    </h3>
+                    <Datetime
+                      pubDatetime={data.pubDatetime}
+                      modDatetime={data.modDatetime}
+                      size="lg"
+                      className="featured-card__meta"
+                    />
+                    <p>{data.description}</p>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
       )
     }
 
     {
+      featuredPosts.length > 0 &&
+        recentPosts.length > 0 && <Hr2 />
+    }
+    {
       recentPosts.length > 0 && (
         <section id="recent-posts">
-          <h2>Recent Posts</h2>
+          <h2 align="center">Recent Posts</h2><br>
           <ul>
             {recentPosts.map(
               ({ data, slug }, index) =>
@@ -119,6 +347,8 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         </svg>
       </LinkButton>
     </div>
+
+    
   </main>
 
   <Footer />
@@ -127,7 +357,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply pb-6 pt-8;
+    @apply pb-6 pt-4;
   }
   #hero h1 {
     @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
@@ -151,13 +381,14 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
   #recent-posts {
-    @apply pb-6 pt-12;
+    @apply pb-1 pt-1;
   }
   #featured h2,
   #recent-posts h2 {
     @apply text-2xl font-semibold tracking-wide;
   }
   .all-posts-btn-wrapper {
-    @apply my-8 text-center;
+    @apply my-5 text-center;
   }
+
 </style>

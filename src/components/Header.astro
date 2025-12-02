@@ -1,10 +1,11 @@
 ---
 import { LOGO_IMAGE, SITE } from "@config";
 import Hr from "./Hr.astro";
+import Hr2 from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
 export interface Props {
-  activeNav?: "posts" | "tags" | "about" | "search";
+  activeNav?: "about"| "posts" | "tags" | "search";
 }
 
 const { activeNav } = Astro.props;
@@ -28,6 +29,13 @@ const { activeNav } = Astro.props;
           )
         }
       </a>
+     <!---toggle on or off text header<a style="margin-left: 1%" href="/" class="logo whitespace-nowrap">
+        {(
+            SITE.title
+          )
+        }
+      </a> 
+      --> 
       <nav id="nav-menu">
         <button
           class="hamburger-menu focus-outline"
@@ -56,20 +64,33 @@ const { activeNav } = Astro.props;
         </button>
         <ul id="menu-items" class="display-none sm:flex">
           <li>
+            <a href="/about/" class={activeNav === "about" ? "active" : ""}>
+              About
+            </a>
+          </li>
+          <li>
             <a href="/posts/" class={activeNav === "posts" ? "active" : ""}>
               Posts
             </a>
           </li>
           <li>
             <a href="/tags/" class={activeNav === "tags" ? "active" : ""}>
-              Tags
+              Topics
             </a>
           </li>
           <li>
-            <a href="/about/" class={activeNav === "about" ? "active" : ""}>
-              About
+            <a class="activeNav" href="https://artres.xyz/artist-index/">
+              Community
             </a>
           </li>
+          <li>
+            <a class="activeNav" href="https://mailchi.mp/a190fe0b4975/art-res">
+              Newsletter
+            </a>
+          </li>
+        
+       
+     
           <li>
             <LinkButton
               href="/search/"
@@ -113,18 +134,18 @@ const { activeNav } = Astro.props;
       </nav>
     </div>
   </div>
-  <Hr />
+  <Hr2 />
 </header>
 
 <style>
   #skip-to-content {
-    @apply absolute -top-full left-16 z-50 bg-skin-accent px-3 py-2 text-skin-inverted transition-all focus:top-4;
+    @apply absolute -top-full left-16 z-50 bg-skin-accent px-2 py-2 text-skin-inverted transition-all focus:top-4;
   }
   .nav-container {
     @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
   }
   .top-nav-wrap {
-    @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
+    @apply relative flex w-full items-start justify-between p-3 sm:items-center sm:py-6;
   }
   .logo {
     @apply absolute py-1 text-xl font-semibold sm:static sm:text-2xl;
