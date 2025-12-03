@@ -448,8 +448,10 @@ html[data-theme="dark"] {
     padding-right: 1rem;
   }
   a {
-    @apply outline-2 outline-offset-1 outline-skin-fill 
-    focus-visible:no-underline focus-visible:outline-dashed;
+    outline-width: 2px;
+    outline-offset: 1px;
+    outline-color: var(--accent);
+    @apply focus-visible:no-underline focus-visible:outline-dashed;
   }
   svg {
     @apply inline-block h-6 w-6 fill-skin-base group-hover:fill-skin-accent;
@@ -830,11 +832,14 @@ html[data-theme="dark"] {
   margin: 0;
 }
 
-@layer components {
-  .display-none {
-    @apply hidden;
+  @layer components {
+    .display-none {
+      @apply hidden;
+    }
+    .focus-outline {
+      outline-width: 2px;
+      outline-offset: 1px;
+      outline-color: var(--accent);
+      @apply focus-visible:no-underline focus-visible:outline-dashed;
+    }
   }
-  .focus-outline {
-    @apply outline-2 outline-offset-1 outline-skin-fill focus-visible:no-underline focus-visible:outline-dashed;
-  }
-}
