@@ -10,34 +10,60 @@ export interface Props {
 
 const { noMarginTop = false } = Astro.props;
 ---
+
 <footer class={`${noMarginTop ? "" : "mt-auto"}`}>
   <Hr noPadding />
   <div class="footer-columns">
     <div class="footer-col">
       <h4>About &amp; Support</h4>
       <p>
-        This site aims to help people learn how to draw, paint, and create art for free.
-        Made by <a href="https://allisonkufta.com" rel="noopener" target="_blank">Allison</a> for artists, by an artist.
+        This site aims to help people learn how to draw, paint, and create art
+        for free. Made by <a
+          href="https://allisonkufta.com"
+          rel="noopener"
+          target="_blank">Allison</a
+        > for artists, by an artist.
       </p>
       <p>
-        Please consider sharing this page with your friends! This site is powered read support! <a href="https://www.buymeacoffee.com/aky" rel="noopener" target="_blank">Buy me a Coffee</a>
-        <a href="https://www.patreon.com/join/astrikos?" rel="noopener" target="_blank">Patreon</a>
+        Please consider sharing this page with your friends! This site is
+        powered read support! <a
+          href="https://www.buymeacoffee.com/aky"
+          rel="noopener"
+          target="_blank">Buy me a Coffee</a
+        >
+        <a
+          href="https://www.patreon.com/join/astrikos?"
+          rel="noopener"
+          target="_blank">Patreon</a
+        >
       </p>
-
     </div>
     <div class="footer-col">
       <h4>Artist Utilities</h4>
       <a href="https://artres.xyz/ideas" target="_blank">Idea Generator</a>
-      <a href="https://artres.xyz/references" target="_blank">Visual Reference Boards</a>
-      <a href="https://artres.xyz/needcolors" target="_blank">Random Color Palettes</a>
-    
+      <a href="https://artres.xyz/references" target="_blank"
+        >Visual Reference Boards</a
+      >
+      <a href="https://artres.xyz/needcolors" target="_blank"
+        >Random Color Palettes</a
+      >
     </div>
     <div class="footer-col">
       <h4>Start Here</h4>
-      <a href="https://www.buymeacoffee.com/l/anatomybook" rel="noopener" target="_blank">Anatomy Book</a>
-      <a href="https://discordapp.com/invite/KQx3SWE" rel="noopener" target="_blank">Join our Discord Channel</a>
-      <a href="https://artres.xyz/post/january-art-challenge/" target="_blank">Art Challenge</a>
-     
+      <a
+        href="https://www.buymeacoffee.com/l/anatomybook"
+        rel="noopener"
+        target="_blank">Anatomy Book</a
+      >
+      <a
+        href="https://discordapp.com/invite/KQx3SWE"
+        rel="noopener"
+        target="_blank">Join our Discord Channel</a
+      >
+      <a href="https://artres.xyz/post/january-art-challenge/" target="_blank"
+        >Art Challenge</a
+      >
+
       <h4>Sponsorships</h4>
       <script defer src="https://intravert.co/serve/003791d954.121.js"></script>
       <div class="intravert-space" id="space-003791d954121"></div>
@@ -47,16 +73,46 @@ const { noMarginTop = false } = Astro.props;
 
     <div class="footer-col">
       <h4>Index</h4>
-      <a href="https://artres.xyz/tags/guide/" rel="noopener" target="_blank">Guides</a>
-      <a href="https://artres.xyz/tags/masterpost/" rel="noopener" target="_blank">Masterpost</a>
-      <a href="https://artres.xyz/tags/art-theory/" rel="noopener" target="_blank">Art Theory</a>
-      <a href="https://artres.xyz/tags/digital-art/" rel="noopener" target="_blank">Digital Art</a>
-      <a href="https://artres.xyz/tags/traditional-art/" rel="noopener" target="_blank">Traditional Art</a>
-      <a href="https://artres.xyz/tags/photography/" rel="noopener" target="_blank">Photography</a>
-      <a href="https://artres.xyz/tags/anatomy/" rel="noopener" target="_blank">Anatomy</a>
-      <a href="https://artres.xyz/tags/interview/" rel="noopener" target="_blank">Artist Interviews</a>
+      <a href="https://artres.xyz/tags/guide/" rel="noopener" target="_blank"
+        >Guides</a
+      >
+      <a
+        href="https://artres.xyz/tags/masterpost/"
+        rel="noopener"
+        target="_blank">Masterpost</a
+      >
+      <a
+        href="https://artres.xyz/tags/art-theory/"
+        rel="noopener"
+        target="_blank">Art Theory</a
+      >
+      <a
+        href="https://artres.xyz/tags/digital-art/"
+        rel="noopener"
+        target="_blank">Digital Art</a
+      >
+      <a
+        href="https://artres.xyz/tags/traditional-art/"
+        rel="noopener"
+        target="_blank">Traditional Art</a
+      >
+      <a
+        href="https://artres.xyz/tags/photography/"
+        rel="noopener"
+        target="_blank">Photography</a
+      >
+      <a href="https://artres.xyz/tags/anatomy/" rel="noopener" target="_blank"
+        >Anatomy</a
+      >
+      <a
+        href="https://artres.xyz/tags/interview/"
+        rel="noopener"
+        target="_blank">Artist Interviews</a
+      >
       <p>Literature: coming soon</p>
-      <a href="https://artres.xyz/categories/" rel="noopener" target="_blank">View All Topics</a>
+      <a href="https://artres.xyz/categories/" rel="noopener" target="_blank"
+        >View All Topics</a
+      >
     </div>
   </div>
 
@@ -104,9 +160,13 @@ const { noMarginTop = false } = Astro.props;
   .footer-col a {
     @apply inline-flex;
   }
+  .footer-col a {
+    @apply transition-colors duration-200 ease-in-out;
+  }
   .footer-col a:hover,
   .footer-col a:focus-visible {
-    color: #5d47ff;
+    color: #5f3df7;
+    text-decoration: underline;
   }
   .footer-wrapper {
     @apply flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4 px-6;

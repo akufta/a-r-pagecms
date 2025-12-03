@@ -1,17 +1,16 @@
 ---
 title: A masterpost of wonderful art supplies for creating gorgeous art
-author: 'A. Kufta'
+author: "A. Kufta"
 pubDatetime: 2017-12-19T10:30:39Z
 slug: a-masterpost-of-wonderful-art-supplies-for-creating-gorgeous-art
 featured: false
 tags:
   - guide
   - masterpost
-description: A collection of hand curated art supplies for traditional and digital artists and photographers.
+description: "A collection of hand curated art supplies for traditional and digital artists and photographers."
 ---
+
 The following is a hand-curated list of art supply recommendations–spanning books, camera gear, and traditional art.
-
-
 
 # Looking for high quality art supplies can be tricky, since there are so many options. This article outlines some of my favorites.
 
@@ -19,7 +18,7 @@ I tried to link more [affordable art supplies](https://amzn.to/2f2rp5q) as alter
 
 College student grade art supplies are a pretty happy medium though. They aren't too expensive, while giving you a lot of bang for your hard earned buck.
 
-If you have a particular favorite for any category,  let me know and I'll add it!
+If you have a particular favorite for any category, let me know and I'll add it!
 
 I will update this post when I can, and [this page](https://www.amazon.com/shop/aastrikos) contains a few fun product recommendations including other things not directly related to art.
 
@@ -33,13 +32,13 @@ These are my favorite camera review sites – [snapsort](https://snapsort.com/) 
 
 ### **Camera Recommendations**
 
-* (Currently Own)  [**Canon T3i**](https://amzn.to/2uNO8b3) - I love this camera. It's a little old, and there are newer versions available, but it's a solid performer with a lot of features.
-* [Sony RX100](https://amzn.to/2f2s8Uk) - I have the Mark 1 version. Super nice and portable.
-* The one on you, perhaps your phone!
-* [**50mm f/1.8**](https://amzn.to/2f1U6zM)**-** one of my favorite lenses, a huge upgrade from the kit lens. Shoots fast, opens up wide (blurry bokeh!), and looks sharp.
-* **Pancake Lens -** this lens is really convenient for travel, as it's light and well made. It's also faster than the kit lens & I use mine a lot.
-* [ND Filters](https://amzn.to/2uR6032) -  I'm not a big [filter](https://www.amazon.com/gp/search/ref=sr_nr_n_0?fst=as%3Aoff&rh=n%3A172282%2Cn%3A499262%2Ck%3And+filters&keywords=nd+filters&ie=UTF8&qid=1501518043&rnid=493964) person, but ND filters are sick when you are trying to blur waterfalls & other things.
-* [cleaning kit ](https://amzn.to/2vlU8th) - definitely recommend one of these. I especially like cloths & the air blaster thing. Cheap and helpful.
+- (Currently Own) [**Canon T3i**](https://amzn.to/2uNO8b3) - I love this camera. It's a little old, and there are newer versions available, but it's a solid performer with a lot of features.
+- [Sony RX100](https://amzn.to/2f2s8Uk) - I have the Mark 1 version. Super nice and portable.
+- The one on you, perhaps your phone!
+- [**50mm f/1.8**](https://amzn.to/2f1U6zM)**-** one of my favorite lenses, a huge upgrade from the kit lens. Shoots fast, opens up wide (blurry bokeh!), and looks sharp.
+- **Pancake Lens -** this lens is really convenient for travel, as it's light and well made. It's also faster than the kit lens & I use mine a lot.
+- [ND Filters](https://amzn.to/2uR6032) - I'm not a big [filter](https://www.amazon.com/gp/search/ref=sr_nr_n_0?fst=as%3Aoff&rh=n%3A172282%2Cn%3A499262%2Ck%3And+filters&keywords=nd+filters&ie=UTF8&qid=1501518043&rnid=493964) person, but ND filters are sick when you are trying to blur waterfalls & other things.
+- [cleaning kit ](https://amzn.to/2vlU8th) - definitely recommend one of these. I especially like cloths & the air blaster thing. Cheap and helpful.
 
 ## Traditional Art Supplies
 
@@ -49,15 +48,16 @@ For paints & colored pencils, I actually recommend buying fewer colors of a more
 
 I use mechanical pencils, wood pencils (less so, especially for sketching), and drafting pencils. Drafting pencils are a really nice upgrade for regular pencils. (I also use these!) You might not be able to afford an luxury car, but you can afford a nice pencil ($5-20) Anyways, here’s a list of my favorite pencils! Remember, you don’t need any of these to improve your drawing, but it can be more comfy to draw with a nicely designed pencil.
 
-* [**Uni Mechanical Pencil Kurutoga Roulette Model**](https://amzn.to/2vZ4KLD) - What a great piece of engineering this pencil is. This is a pretty light pencil that automatically rotates the graphite as you write/draw so it stays sharp! It’s really neat and makes your lines more consistent.
-* [**Pentel Graph Gear 1000, 0.5mm **](https://amzn.to/2vZdjWw)- I absolutely love this pencil, as it was my first drafting pencil. You can buy it in more sizes, even as narrow as .3mm (very nice for details). It’s a bit heavy, but the construction is great, the grip is nicely designed, it’s beautiful, and has a really handy spring loaded clip that can hold a lot of paper.
-* [Faber Castell’s Pencil Sets -](https://amzn.to/2f1rkiu) I got one of these for Christmas, and I really like them. Really smooth and consistent shading (more so than most regular office pencils) and aesthetic look. [The particular set I have](https://amzn.to/2f2fUuU), a gift.
-* [Dixon Ticonderoga](https://amzn.to/2uRK0oX)  Smooth graphite lay down, a classic.
-* [Papermate ClearPoint ](https://amzn.to/2uOawB6) -depending on what set you get. Love these, even though they start looking a little rough (rubber color fades/top can break off)  after a lot of use. The large eraser is great, and I like the side click functionality. They’re also easy to find at stores, which is convenient.
-* On a budget, [Royal & Langnickel Essentials Sketching Pencil Set 21 pieces](https://amzn.to/2vc9MGV) - Very affordable and they’re pretty nice! You get a nice, wide variety of graphite grades to experiment with. I don’t really oil paint that often, but their oil painting set is pretty high quality for the price as well.
-* Have heard good things, but have not tried: Rotring & Muji.
+- [**Uni Mechanical Pencil Kurutoga Roulette Model**](https://amzn.to/2vZ4KLD) - What a great piece of engineering this pencil is. This is a pretty light pencil that automatically rotates the graphite as you write/draw so it stays sharp! It’s really neat and makes your lines more consistent.
+- [**Pentel Graph Gear 1000, 0.5mm **](https://amzn.to/2vZdjWw)- I absolutely love this pencil, as it was my first drafting pencil. You can buy it in more sizes, even as narrow as .3mm (very nice for details). It’s a bit heavy, but the construction is great, the grip is nicely designed, it’s beautiful, and has a really handy spring loaded clip that can hold a lot of paper.
+- [Faber Castell’s Pencil Sets -](https://amzn.to/2f1rkiu) I got one of these for Christmas, and I really like them. Really smooth and consistent shading (more so than most regular office pencils) and aesthetic look. [The particular set I have](https://amzn.to/2f2fUuU), a gift.
+- [Dixon Ticonderoga](https://amzn.to/2uRK0oX) Smooth graphite lay down, a classic.
+- [Papermate ClearPoint ](https://amzn.to/2uOawB6) -depending on what set you get. Love these, even though they start looking a little rough (rubber color fades/top can break off) after a lot of use. The large eraser is great, and I like the side click functionality. They’re also easy to find at stores, which is convenient.
+- On a budget, [Royal & Langnickel Essentials Sketching Pencil Set 21 pieces](https://amzn.to/2vc9MGV) - Very affordable and they’re pretty nice! You get a nice, wide variety of graphite grades to experiment with. I don’t really oil paint that often, but their oil painting set is pretty high quality for the price as well.
+- Have heard good things, but have not tried: Rotring & Muji.
 
 Other popular options:
+
 <div class="shrsl_ShareASale_productShowCaseTarget_30600"></div>
 <script type="text/javascript"  src="https://showcase.shareasale.com/shareASale_liveWidget_loader.js?dt=02092019105654"></script>
 <script type="text/javascript">shrsl_ShareASale_liveWid_Init(30600, 1572869, 'shrsl_ShareASale_liveWid_product12_populate');</script>
@@ -66,48 +66,48 @@ Other popular options:
 
 I am also particular with my pens, and it's like the pencils. Something nice I can actually afford– though inks are less cheap to replace than graphite cores.
 
-* [**Pentel Energel RTX .38mm**](https://amzn.to/2uOCzAm) - I prefer very thin lines. These are affordable and I like how quickly the ink dries.
-* [**Uni-Ball Signo 207**](https://amzn.to/2uOB7OF)  - very nice, especially in the smaller sizes. I really like the ink smoothness and that you can find them easily without ordering them online.
-* [Steadler Fineliners](https://amzn.to/2uP0sbe) - I only own a small 4 set for inking purposes, but they are really nice. Quite popular.
-* [Sakura Pigma Micron](https://amzn.to/2wf21gs) - my favorite pens for inking. The small sizes are great for details, and the ink is high quality.
+- [**Pentel Energel RTX .38mm**](https://amzn.to/2uOCzAm) - I prefer very thin lines. These are affordable and I like how quickly the ink dries.
+- [**Uni-Ball Signo 207**](https://amzn.to/2uOB7OF) - very nice, especially in the smaller sizes. I really like the ink smoothness and that you can find them easily without ordering them online.
+- [Steadler Fineliners](https://amzn.to/2uP0sbe) - I only own a small 4 set for inking purposes, but they are really nice. Quite popular.
+- [Sakura Pigma Micron](https://amzn.to/2wf21gs) - my favorite pens for inking. The small sizes are great for details, and the ink is high quality.
 
 ### **Favorite markers**
 
 I am a fan of the , crisp, almost watercolor effect you can get with artist grade markers.
 
-* <a href="https://www.shareasale.com/m-pr.cfm?merchantID=67805&userID=1572869&productID=736675564" target="_blank">Dual Brush Pen Set, 96 Colors</a>
-* <a href="https://www.shareasale.com/m-pr.cfm?merchantID=67805&userID=1572869&productID=736675588" target="_blank">Dual Brush Pen, N00 - Blender</a>
+- <a href="https://www.shareasale.com/m-pr.cfm?merchantID=67805&userID=1572869&productID=736675564" target="_blank">Dual Brush Pen Set, 96 Colors</a>
+- <a href="https://www.shareasale.com/m-pr.cfm?merchantID=67805&userID=1572869&productID=736675588" target="_blank">Dual Brush Pen, N00 - Blender</a>
 
 ### **Favorite Colored Pencils**
 
-* [Prismacolor Premier Colored Pencils](https://amzn.to/2f2pldG)<span style="font-size: 1rem;"> - soft, wax based, blend amazingly; fragile and a bit prone to internal breakage (solved by microwaving for a very short time)</span>
-* [Faber Castell Polychromos](https://amzn.to/2f2dFYL)<span style="font-size: 1rem;"> - oil based, so they are not prone to wax bloom, sturdy, beautifully made, blend well, vibrant colors, medium hardness</span>
-* [Derwent Colored Pencils – Colorsoft](https://amzn.to/2vpDciw)  - I really like these & the Inktense. Much more affordable than alternatives.
+- [Prismacolor Premier Colored Pencils](https://amzn.to/2f2pldG)<span style="font-size: 1rem;"> - soft, wax based, blend amazingly; fragile and a bit prone to internal breakage (solved by microwaving for a very short time)</span>
+- [Faber Castell Polychromos](https://amzn.to/2f2dFYL)<span style="font-size: 1rem;"> - oil based, so they are not prone to wax bloom, sturdy, beautifully made, blend well, vibrant colors, medium hardness</span>
+- [Derwent Colored Pencils – Colorsoft](https://amzn.to/2vpDciw)  - I really like these & the Inktense. Much more affordable than alternatives.
 
 ### **Favorite Watercolors**
 
-* [Wisnor & Newton Cotman Sketchbox](https://amzn.to/2udB8rS) - nice, vibrant colors for the price (not their artist grade, but still great)
-* [Albrecht Durer Watercolor Pencils](https://amzn.to/2uOZ20f)- blend out extremely well, not grainy like prismacolor watercolors are when water is added
+- [Wisnor & Newton Cotman Sketchbox](https://amzn.to/2udB8rS) - nice, vibrant colors for the price (not their artist grade, but still great)
+- [Albrecht Durer Watercolor Pencils](https://amzn.to/2uOZ20f)- blend out extremely well, not grainy like prismacolor watercolors are when water is added
 
 ### [Favorite Sketchbooks & Paper](https://amzn.to/2f2cKYb)
 
 Quite cheap on amazon, but Micheals often has great sales & buy 1 get 1 free deals, so I also recommend checking out the prices/sales there before looking at Amazon. Below are a list of my personal favorites.
 
-* [Strathmore STR-400](https://amzn.to/2f2NroN)  I used watercolor & colored pencil on this paper and it didn’t wrap too much, which surprised me. I like the toothy surface.
-* [**Strathmore Mixed Media**](https://amzn.to/2weHYP8) **-** One of my favorites. A smallish size makes it portable. Vellum surface is smooth, which is great for blending and a less grainy look, but also holds on to colored pencil & watercolor. Completely filled mine and plan to buy another!
-* [Strathmore Wind Power Vellum Bristol](https://amzn.to/2uOUvuy) - Super nice smooth texture, also eco friendly. Similar to the paper above.
-* Not on Amazon, but Blick’s line of sketchbooks/paper rocks. I love their **mixed media drawing pad**. I filled it up completely.
-* <a href="https://www.shareasale.com/m-pr.cfm?merchantID=72563&userID=1572869&productID=813532987" target="_blank">Arteza Stretched Canvas 24x30 - Set of 6</a>
+- [Strathmore STR-400](https://amzn.to/2f2NroN) I used watercolor & colored pencil on this paper and it didn’t wrap too much, which surprised me. I like the toothy surface.
+- [**Strathmore Mixed Media**](https://amzn.to/2weHYP8) **-** One of my favorites. A smallish size makes it portable. Vellum surface is smooth, which is great for blending and a less grainy look, but also holds on to colored pencil & watercolor. Completely filled mine and plan to buy another!
+- [Strathmore Wind Power Vellum Bristol](https://amzn.to/2uOUvuy) - Super nice smooth texture, also eco friendly. Similar to the paper above.
+- Not on Amazon, but Blick’s line of sketchbooks/paper rocks. I love their **mixed media drawing pad**. I filled it up completely.
+- <a href="https://www.shareasale.com/m-pr.cfm?merchantID=72563&userID=1572869&productID=813532987" target="_blank">Arteza Stretched Canvas 24x30 - Set of 6</a>
 
 ## Digital Art Supplies
 
-[Beginner's Guide to Digital Art](https://artres.xyz/post/beginners-guide-to-digital-art/) contains  software advice.
+[Beginner's Guide to Digital Art](https://artres.xyz/post/beginners-guide-to-digital-art/) contains software advice.
 
-* [**Wacom Graphics Tablet**](https://amzn.to/2vZgk9k) - I have the Bamboo Capture, and I love it. It's very useful compared to a mouse. There are a lot of other brands available.
-* [iPad Pro](https://amzn.to/2vmiL7y) - can be cheaper than some models of the Cintiq, and many artists love it.
-* [Microsoft Surface Pro ](https://amzn.to/2hNBtAl) see above. If you get an older generation, should be more affordable.
-* [Huion Graphics Tablet](https://amzn.to/2vmsIlI) - well liked, more affordable alternative to Wacom tablets.
-* [XP-Pen](https://amzn.to/2Gvk2zn) -I personally own the lovely Deco-03, which I [wrote a review about](https://artres.xyz/post/drawing-tablet-review-xp-pen-deco-03/)!
+- [**Wacom Graphics Tablet**](https://amzn.to/2vZgk9k) - I have the Bamboo Capture, and I love it. It's very useful compared to a mouse. There are a lot of other brands available.
+- [iPad Pro](https://amzn.to/2vmiL7y) - can be cheaper than some models of the Cintiq, and many artists love it.
+- [Microsoft Surface Pro ](https://amzn.to/2hNBtAl) see above. If you get an older generation, should be more affordable.
+- [Huion Graphics Tablet](https://amzn.to/2vmsIlI) - well liked, more affordable alternative to Wacom tablets.
+- [XP-Pen](https://amzn.to/2Gvk2zn) -I personally own the lovely Deco-03, which I [wrote a review about](https://artres.xyz/post/drawing-tablet-review-xp-pen-deco-03/)!
 
 ## Quality of Life
 
@@ -117,9 +117,9 @@ I will migrate these products over to another source sometime, but for now, I ha
 
 ## Books for Artists
 
-* [See this masterpost!](https://artres.xyz/post/wonderful-art-resources-books-masterpost/)
+- [See this masterpost!](https://artres.xyz/post/wonderful-art-resources-books-masterpost/)
 
-Transparency Note: This post contains affiliate links, if you use them, you can help support Art-Res & help me pay for college!  Of course, if you find deals elsewhere, go for it! Many retailers do price matches.
+Transparency Note: This post contains affiliate links, if you use them, you can help support Art-Res & help me pay for college! Of course, if you find deals elsewhere, go for it! Many retailers do price matches.
 
 ## Browse Options Here
 

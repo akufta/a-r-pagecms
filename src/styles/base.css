@@ -268,7 +268,7 @@ html[data-theme="dark"] {
 .start-here-line {
   margin-bottom: 0.75rem;
   font-size: 1rem;
-  color: #3a2a74;
+  color: #7152e1;
   line-height: 1.5;
 }
 .start-here-line i {
@@ -366,7 +366,9 @@ html[data-theme="dark"] {
   gap: 1.25rem;
 }
 .tag-posts {
-  @apply w-full my-8;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .tag-posts .article-card {
   min-height: 0;
@@ -431,12 +433,19 @@ html[data-theme="dark"] {
   body {
     font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
     font-weight: 400;
-    @apply flex min-h-[100svh] flex-col bg-skin-fill text-skin-base 
-    selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
+    display: flex;
+    min-height: 100svh;
+    flex-direction: column;
+    background-color: var(--background);
+    color: var(--foreground);
   }
   section,
   footer {
-    @apply mx-auto max-w-3xl px-4;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 48rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   a {
     @apply outline-2 outline-offset-1 outline-skin-fill 
@@ -453,8 +462,8 @@ html[data-theme="dark"] {
   .prose {
     @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
     prose-h3:italic prose-p:!text-skin-base 
-    prose-a:!text-skin-base prose-a:!decoration-dashed prose-a:underline-offset-8
-    hover:prose-a:text-skin-accent prose-blockquote:!border-l-skin-accent
+    prose-a:!text-indigo-500 prose-a:!decoration-dashed prose-a:underline-offset-8 prose-a:transition-colors prose-a:duration-200 prose-a:ease-in-out
+    hover:prose-a:text-violet-400 prose-blockquote:!border-l-skin-accent
     prose-blockquote:border-opacity-50 prose-blockquote:opacity-80
     prose-figcaption:!text-skin-base prose-figcaption:opacity-70
     prose-strong:!text-skin-base
@@ -471,9 +480,7 @@ html[data-theme="dark"] {
     prose-img:mx-auto 
     prose-img:border-skin-line prose-hr:!border-skin-line;
   }
-  .prose a {
-    @apply break-words hover:!text-skin-accent;
-  }
+
   .prose thead th:first-child,
   tbody td:first-child,
   tfoot td:first-child {
@@ -504,7 +511,7 @@ html[data-theme="dark"] {
 
   /* Track */
   ::-webkit-scrollbar-track {
-    @apply bg-skin-fill;
+    background-color: var(--background);
   }
 
   /* Handle */

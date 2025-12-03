@@ -54,7 +54,14 @@ const color = [
   "silver",
   "copper",
 ];
-const chartype = ["plant-like", "humanoid", "terrestrial", "avian", "aquatic", "mechanical"];
+const chartype = [
+  "plant-like",
+  "humanoid",
+  "terrestrial",
+  "avian",
+  "aquatic",
+  "mechanical",
+];
 const charfeature = [
   "a horn",
   "a tail",
@@ -145,7 +152,14 @@ const texture = [
 ];
 const hairtype = ["curly", "very curly", "straight", "wavy", "wispy", "fuzzy"];
 const length = ["long", "very long", "medium", "very short", "short"];
-const facialfeatures = ["harsh", "defined", "angular", "soft", "boxy", "rounded"];
+const facialfeatures = [
+  "harsh",
+  "defined",
+  "angular",
+  "soft",
+  "boxy",
+  "rounded",
+];
 const personalitybase = [
   "friendly",
   "bubbly",
@@ -199,7 +213,16 @@ const accessories = [
   "sunglasses",
   "glasses",
 ];
-const personalityneg = ["arrogant", "short-tempered", "blunt", "sneaky", "pessimistic", "pathological", "sad", "jealous"];
+const personalityneg = [
+  "arrogant",
+  "short-tempered",
+  "blunt",
+  "sneaky",
+  "pessimistic",
+  "pathological",
+  "sad",
+  "jealous",
+];
 const frequency = ["almost always", "rarely", "occasionally", "often"];
 const atmosphere = ["arid", "humid", "tropical", "cloudy"];
 const amount = ["a little", "a lot", "some", "no"];
@@ -251,9 +274,33 @@ const shape = [
 ];
 const angle = ["3/4", "upward", "tilted", "eye level", "downward"];
 const perspective = ["1 point", "2 point", "3 point"];
-const stiffness = ["very relaxed", "relaxed", "neutral", "slightly stiff", "rigid"];
-const posebase = ["sitting", "laying down", "jumping", "standing", "leaning", "falling", "kicking", "punching", "walking", "running", "skipping"];
-const bentness = ["slightly bent", "neutral", "very bent", "mostly staight", "very straight"];
+const stiffness = [
+  "very relaxed",
+  "relaxed",
+  "neutral",
+  "slightly stiff",
+  "rigid",
+];
+const posebase = [
+  "sitting",
+  "laying down",
+  "jumping",
+  "standing",
+  "leaning",
+  "falling",
+  "kicking",
+  "punching",
+  "walking",
+  "running",
+  "skipping",
+];
+const bentness = [
+  "slightly bent",
+  "neutral",
+  "very bent",
+  "mostly staight",
+  "very straight",
+];
 const direction = ["up", "down"];
 const placement = [
   "above",
@@ -269,7 +316,8 @@ const placement = [
 ];
 const number = ["0", "2", "4", "6", "3"];
 
-const pick = (arr: string[]) => arr[Math.floor(Math.random() * arr.length)];
+const pick = <T,>(arr: readonly T[]) =>
+  arr[Math.floor(Math.random() * arr.length)];
 
 const phraseGenerators: Array<() => string> = [
   () =>
@@ -327,7 +375,8 @@ const phraseGenerators: Array<() => string> = [
 const generatePrompt = () => pick(phraseGenerators)();
 
 const BATCH_SIZE = 5;
-const generateBatch = (count: number) => Array.from({ length: count }, () => generatePrompt());
+const generateBatch = (count: number) =>
+  Array.from({ length: count }, () => generatePrompt());
 
 export default function IdeaGenerator() {
   const [ideas, setIdeas] = useState<string[]>(() => generateBatch(BATCH_SIZE));
@@ -335,7 +384,7 @@ export default function IdeaGenerator() {
   const [copied, setCopied] = useState(false);
 
   const handleGenerateMore = () => {
-    setIdeas((prev) => [...prev, ...generateBatch(BATCH_SIZE)]);
+    setIdeas(prev => [...prev, ...generateBatch(BATCH_SIZE)]);
   };
 
   const handleCopy = async () => {
@@ -354,7 +403,11 @@ export default function IdeaGenerator() {
   return (
     <div className="idea-generator">
       <div className="generator-header">
-        <button type="button" onClick={handleGenerateMore} className="pulse-btn">
+        <button
+          type="button"
+          onClick={handleGenerateMore}
+          className="pulse-btn"
+        >
           Make It Rain 5 More Ideas!
         </button>
       </div>
@@ -382,15 +435,15 @@ export default function IdeaGenerator() {
         <div className="favorites-info">
           <p className="favorites-title">Favorite ideas</p>
           <p className="favorites-description">
-            Save the ideas you want to explore later then copy them into your notes when
-            you're ready to build.
+            Save the ideas you want to explore later then copy them into your
+            notes when you're ready to build.
           </p>
         </div>
         <div className="favorites-controls">
           <textarea
             className="favorites-input"
             value={favorites}
-            onChange={(event) => setFavorites(event.currentTarget.value)}
+            onChange={event => setFavorites(event.currentTarget.value)}
             rows={5}
             placeholder="Capture the prompts you want to sketch."
           />

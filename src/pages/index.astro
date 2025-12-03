@@ -5,7 +5,7 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 
-import Hr2 from "@components/Hr2.astro"
+import Hr2 from "@components/Hr2.astro";
 import Card from "@components/Card";
 import FeaturedCard from "@components/FeaturedCard.astro";
 import Socials from "@components/Socials.astro";
@@ -20,7 +20,9 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
 const socialCount = SOCIALS.filter(social => social.active).length;
 
-const getOgImageUrl = (ogImage) => {
+type OgImageSource = string | { src?: string } | null | undefined;
+
+const getOgImageUrl = (ogImage: OgImageSource) => {
   if (!ogImage) return null;
   if (typeof ogImage === "string") return ogImage;
   if (ogImage?.src) return ogImage.src;
@@ -32,28 +34,35 @@ const getOgImageUrl = (ogImage) => {
   <Header />
   <main id="main-content">
     <section id="hero" class="hero-panel">
-      <div align="center"><h1 style="margin:0 auto; font-size: 1.8em;">Welcome to Art-Res</h1>
-      <a
-        target="_blank"
-        href="/rss.xml"
-        class="rss-link"
-        aria-label="rss feed"
-        title="RSS Feed"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
-          ><path
-            d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
-          ></path><path
-            d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
-          ></path><circle cx="6" cy="18" r="2"></circle>
-        </svg>
-        <span class="sr-only">RSS Feed</span>
-      </a></div>
-      <p class="hero-text" align="center">
-        Interested in learning how to draw or improve your painting skills? I got you!  <br> Here you can find a consistently updated collection of useful resources, tutorials, and stock for artists!<br>
-        Curated by hand and with love by <a class="start-here-line" href="https://instagram.com/akufta.art">Allison</a>.
+      <div class="text-center">
+        <h1 style="margin:0 auto; font-size: 1.8em;">Welcome to Art-Res</h1>
+        <a
+          target="_blank"
+          href="/rss.xml"
+          class="rss-link"
+          aria-label="rss feed"
+          title="RSS Feed"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="rss-icon"
+            ><path
+              d="M19 20.001C19 11.729 12.271 5 4 5v2c7.168 0 13 5.832 13 13.001h2z"
+            ></path><path
+              d="M12 20.001h2C14 14.486 9.514 10 4 10v2c4.411 0 8 3.589 8 8.001z"
+            ></path><circle cx="6" cy="18" r="2"></circle>
+          </svg>
+          <span class="sr-only">RSS Feed</span>
+        </a>
+      </div>
+      <p class="hero-text text-center">
+        Interested in learning how to draw or improve your painting skills? I
+        got you! <br /> Here you can find a consistently updated collection of useful
+        resources, tutorials, and stock for artists!<br />
+        Curated by hand and with love by <a
+          class="start-here-line"
+          href="https://instagram.com/akufta.art">Allison</a
+        >.
       </p>
-    
+
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
@@ -68,262 +77,261 @@ const getOgImageUrl = (ogImage) => {
     <section class="panel-card newsletter-card">
       <div>
         <h4>Join the Art-Res Family</h4>
-        <hr class="Hr2" style="py-3" aria-hidden="true"></div>
-        <p> <br>
-          Subscribe to gain access to the newsletter, an invite to our community
-          chat/critique nights, free resources, and more!
-        </p>
-        <form
-          class="newsletter-form"
-          aria-label="Newsletter signup"
-          id="newsletter-form"
-          name="contact"
-          method="post"
-          data-netlify="true"
+        <hr class="Hr2" style="py-3" aria-hidden="true" />
+      </div>
+      <p>
+        <br />
+        Subscribe to gain access to the newsletter, an invite to our community chat/critique
+        nights, free resources, and more!
+      </p>
+      <form
+        class="newsletter-form"
+        aria-label="Newsletter signup"
+        id="newsletter-form"
+        name="contact"
+        method="post"
+        data-netlify="true"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <label class="sr-only" for="newsletter-email">Email address</label>
+        <input
+          id="newsletter-email"
+          name="email"
+          type="email"
+          placeholder="your@email.com"
+          required
+        />
+        <button type="button">Join the community!</button>
+      </form>
+      <div
+        id="newsletter-status"
+        class="newsletter-form__status"
+        role="status"
+        aria-live="polite"
+      >
+      </div>
+    </section>
+  </main>
+
+  <section class="panel-card start-here-card">
+    <div class="text-center">
+      <h4>Start Here!</h4>
+      <p>
+        <strong>Art-Res Anatomy E-Book!</strong>
+        (
+        <a href="https://artres.xyz/shop" target="_blank" rel="noreferrer">
+          more details
+        </a>
+        // ) + other
+        <strong>
+          <a href="https://artres.xyz/shop" target="_blank" rel="noreferrer">
+            premium content
+          </a>
+        </strong>
+      </p>
+      <p class="start-here-line">
+        <i>Artist Guides to:</i>
+        <a
+          href="https://artres.xyz/post/beginners-guide-to-digital-art/"
+          rel="noreferrer"
+          target="_blank"
         >
-          <input type="hidden" name="form-name" value="contact" />
-          <label class="sr-only" for="newsletter-email">Email address</label>
-          <input
-            id="newsletter-email"
-            name="email"
-            type="email"
-            placeholder="your@email.com"
-            required
+          digital art
+        </a>
+        ,
+        <a
+          href="https://artres.xyz/post/beginners-guide-to-traditional-art/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          traditional art
+        </a>
+        , and
+        <a
+          href="https://artres.xyz/post/ultimate-guide-to-photography/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          photography
+        </a>
+      </p>
+      <p class="start-here-line">
+        <i>Art Fundamentals:</i>
+        <a
+          href="https://artres.xyz/post/wonderful-resources-to-master-color-theory/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          color theory
+        </a>
+        ,
+        <a
+          href="https://artres.xyz/post/a-round-up-of-anatomy-quick-tips/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          anatomy
+        </a>
+        ,
+        <a
+          href="https://artres.xyz/post/artists-guide-to-perspective/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          perspective
+        </a>
+        ,
+        <a
+          href="https://artres.xyz/post/ultimate-guide-to-composition/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          composition
+        </a>
+      </p>
+      <p class="start-here-line">
+        <a
+          href="https://artres.xyz/post/masterpost-of-wonderful-high-quality-art-supplies/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Art Supply Recommendations
+        </a>
+        &
+        <a
+          href="https://artres.xyz/post/wonderful-art-resources-books-masterpost/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Art Book Recommendations
+        </a>
+      </p>
+      <p class="start-here-line">
+        <a
+          href="https://artres.xyz/post/how-to-create-a-free-portfolio-and-blog-site/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          How to create a portfolio
+        </a>
+        &
+        <a
+          href="https://artres.xyz/post/learn-how-to-market-your-art-the-right-way/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          market your art
+        </a>
+      </p>
+      <p class="start-here-line">
+        <a
+          href="https://artres.xyz/post/start-creating-beautiful-things-with-these-fantastic-free-and-open-source-software-programs/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Free & Open Source Art Programs
+        </a>
+      </p>
+      <div class="buy-coffee-wrapper">
+        <a
+          class="buy-coffee"
+          href="https://www.buymeacoffee.com/aky"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
+            alt="Buy me a coffee"
           />
-          <button type="button">Join the community!</button>
-        </form>
-        <div id="newsletter-status" class="newsletter-form__status" role="status" aria-live="polite"></div>
+          <span>Buy me a coffee</span>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="panel-card start-here-card">
-      <div align="center">
-        <h4>Start Here!</h4>
-        <p>
-          <strong>Art-Res Anatomy E-Book!</strong>
-          (
-          <a
-            href="https://artres.xyz/shop"
-            target="_blank"
-            rel="noreferrer"
-          >
-            more details
-          </a>
-          //
-          )
-          + other
-          <strong>
-            <a
-              href="https://artres.xyz/shop"
-              target="_blank"
-              rel="noreferrer"
-            >
-              premium content
-            </a>
-          </strong>
-        </p>
-        <p class="start-here-line">
-          <i>Artist Guides to:</i>
-          <a
-            href="https://artres.xyz/post/beginners-guide-to-digital-art/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            digital art
-          </a>
-          ,
-          <a
-            href="https://artres.xyz/post/beginners-guide-to-traditional-art/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            traditional art
-          </a>
-          , and
-          <a
-            href="https://artres.xyz/post/ultimate-guide-to-photography/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            photography
-          </a>
-        </p>
-        <p class="start-here-line">
-          <i>Art Fundamentals:</i>
-          <a
-            href="https://artres.xyz/post/wonderful-resources-to-master-color-theory/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            color theory
-          </a>
-          ,
-          <a
-            href="https://artres.xyz/post/a-round-up-of-anatomy-quick-tips/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            anatomy
-          </a>
-          ,
-          <a
-            href="https://artres.xyz/post/artists-guide-to-perspective/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            perspective
-          </a>
-          ,
-          <a
-            href="https://artres.xyz/post/ultimate-guide-to-composition/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            composition
-          </a>
-        </p>
-        <p class="start-here-line">
-          <a
-            href="https://artres.xyz/post/masterpost-of-wonderful-high-quality-art-supplies/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Art Supply Recommendations
-          </a>
-          &
-          <a
-            href="https://artres.xyz/post/wonderful-art-resources-books-masterpost/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Art Book Recommendations
-          </a>
-        </p>
-        <p class="start-here-line">
-          <a
-            href="https://artres.xyz/post/how-to-create-a-free-portfolio-and-blog-site/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            How to create a portfolio
-          </a>
-          &
-          <a
-            href="https://artres.xyz/post/learn-how-to-market-your-art-the-right-way/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            market your art
-          </a>
-        </p>
-        <p class="start-here-line">
-          <a
-            href="https://artres.xyz/post/start-creating-beautiful-things-with-these-fantastic-free-and-open-source-software-programs/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Free & Open Source Art Programs
-          </a>
-        </p>
-        <div class="buy-coffee-wrapper">
-          <a
-            class="buy-coffee"
-            href="https://www.buymeacoffee.com/aky"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg"
-              alt="Buy me a coffee"
-            />
-            <span>Buy me a coffee</span>
-          </a>
+  <section class="panel-card inspiration-card">
+    <div>
+      <h4>Need some inspiration?</h4>
+      <p>I got you! Check out these Artist Utilities!</p>
+      <div class="inspiration-grid">
+        <a
+          class="inspiration-link"
+          href="https://artres.xyz/ideas"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Idea Generator
+        </a>
+        <a
+          class="inspiration-link"
+          href="https://artres.xyz/references"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Reference Boards
+        </a>
+        <a
+          class="inspiration-link"
+          href="https://artres.xyz/needcolors"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Color Palettes
+        </a>
+      </div>
+    </div>
+  </section>
+  {
+    featuredPosts.length > 0 && (
+      <section id="featured">
+        <div class="featured-heading">
+          <h2>Featured</h2>
+          <p>Curated reading from the Art-Res archive.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="panel-card inspiration-card">
-      <div>
-        <h4>Need some inspiration?</h4>
-        <p>I got you! Check out these Artist Utilities!</p>
-        <div class="inspiration-grid">
-          <a
-            class="inspiration-link"
-            href="https://artres.xyz/ideas"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Idea Generator
-          </a>
-          <a
-            class="inspiration-link"
-            href="https://artres.xyz/references"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Reference Boards
-          </a>
-          <a
-            class="inspiration-link"
-            href="https://artres.xyz/needcolors"
-            rel="noreferrer"
-            target="_blank"
-          >
-            Color Palettes
-          </a>
+        <div class="featured-grid">
+          {featuredPosts.map(({ data, slug }) => {
+            const imageUrl = getOgImageUrl(data.ogImage);
+            return (
+              <FeaturedCard
+                slug={slug}
+                frontmatter={data}
+                imageUrl={imageUrl}
+              />
+            );
+          })}
         </div>
-      </div>
-    </section>
-    {
-      featuredPosts.length > 0 && (
-        <section id="featured">
-          <div class="featured-heading">
-            <h2>Featured</h2>
-            <p>Curated reading from the Art-Res archive.</p>
-          </div>
-          <div class="featured-grid">
-            {featuredPosts.map(({ data, slug }) => {
-              const imageUrl = getOgImageUrl(data.ogImage);
-              return (
-                <FeaturedCard
-                  slug={slug}
-                  frontmatter={data}
-                  imageUrl={imageUrl}
-                />
-              );
-            })}
-          </div>
-        </section>
-      )
-    }
+      </section>
+    )
+  }
 
-    {
-      featuredPosts.length > 0 &&
-        recentPosts.length > 0 && (
-          <>
-            <div class="all-posts-btn-wrapper">
-              <LinkButton
-                href="/posts/"
-                className="all-posts-btn focus-outline"
-                ariaLabel="View all posts"
-              >
-                <span>All Posts</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                  ><path
-                    d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
-                  ></path>
-                </svg>
-              </LinkButton>
-            </div>
-            <Hr2 />
-          </>
-        )
-    }
-    
-    {
-      recentPosts.length > 0 && (
-        <section id="recent-posts">
-          <h2 align="center">Recent Posts</h2><br>
+  {
+    featuredPosts.length > 0 && recentPosts.length > 0 && (
+      <>
+        <div class="all-posts-btn-wrapper">
+          <LinkButton
+            href="/posts/"
+            className="all-posts-btn focus-outline"
+            ariaLabel="View all posts"
+          >
+            <span>All Posts</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z" />
+            </svg>
+          </LinkButton>
+        </div>
+        <Hr2 />
+      </>
+    )
+  }
+
+  {
+    recentPosts.length > 0 && (
+      <section id="recent-posts">
+        <>
+          <h2 class="text-center">Recent Posts</h2>
+          <br />
+        </>
+        <>
           <ul>
             {recentPosts.map(
               ({ data, slug }, index) =>
@@ -335,17 +343,15 @@ const getOgImageUrl = (ogImage) => {
                   />
                 )
             )}
-          </ul><br>
-        </section>
-      )
-    }
-
-  
-    
-  </main>
-
-  <Footer />
+          </ul>
+          <br />
+        </>
+      </section>
+    )
+  }
 </Layout>
+
+<Footer />
 
 <style>
   /* ===== Hero Section ===== */
@@ -400,7 +406,7 @@ const getOgImageUrl = (ogImage) => {
     @apply inline-flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] transition duration-300;
     color: #fff;
     background: linear-gradient(120deg, #a9a9ff, #7b63ff);
-   
+
     letter-spacing: 0.14em;
   }
   .all-posts-btn:hover,
@@ -413,7 +419,6 @@ const getOgImageUrl = (ogImage) => {
     height: 1rem;
     fill: currentColor;
   }
-
 </style>
 
 <script is:inline>
@@ -425,10 +430,13 @@ const getOgImageUrl = (ogImage) => {
     const setStatus = (message, isError = false) => {
       if (!statusEl) return;
       statusEl.textContent = message;
-      statusEl.classList.toggle("newsletter-form__status--error", Boolean(isError));
+      statusEl.classList.toggle(
+        "newsletter-form__status--error",
+        Boolean(isError)
+      );
     };
 
-    form.addEventListener("submit", async (event) => {
+    form.addEventListener("submit", async event => {
       event.preventDefault();
       if (!form.checkValidity()) {
         form.reportValidity();
@@ -462,4 +470,4 @@ const getOgImageUrl = (ogImage) => {
       }
     });
   })();
-  </script>
+</script>

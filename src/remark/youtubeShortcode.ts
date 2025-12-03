@@ -1,20 +1,20 @@
-import type { Plugin } from "unified";
-import type { Paragraph } from "mdast";
-import type { Parent } from "unist";
+import type { RemarkPlugin } from "@astrojs/markdown-remark";
+import type { Root, Text } from "mdast";
 import { visit } from "unist-util-visit";
 
 const YOUTUBE_SHORTCODE = /^{{<\s*youtube\s+([\w-]{8,})\s*>}}$/i;
 
-const remarkYoutubeShortcode: Plugin = () => {
-  return (tree) => {
-    visit<Paragraph>(tree, "paragraph", (node, index, parent) => {
+const remarkYoutubeShortcode: RemarkPlugin = () => {
+  return (tree: Root) => {
+    visit(tree, "paragraph", (node, index, parent) => {
       if (!parent || typeof index !== "number") return;
       if (node.children.length !== 1) return;
 
       const child = node.children[0];
       if (child.type !== "text") return;
 
-      const value = child.value.trim();
+      const textChild = child as Text;
+      const value = textChild.value.trim();
       const match = YOUTUBE_SHORTCODE.exec(value);
       if (!match) return;
 
