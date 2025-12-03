@@ -40,6 +40,7 @@ const { currentPage, totalPages, paginatedPosts } = Astro.props;
 </Layout>
 
 <style>
+  @reference "tailwindcss";
   ul.posts-grid {
     @apply grid gap-3 sm:grid-cols-2;
     list-style: none;

@@ -14,35 +14,42 @@ const { tag, size = "sm" } = Astro.props;
 </li>
 
 <style>
-.tag-chip {
-  list-style: none;
-}
-.tag-chip a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.35rem 0.85rem;
-  border-radius: 4px;
-  background: linear-gradient(135deg, rgba(123, 99, 255, 0.1), rgba(97, 218, 255, 0.08));
-  border: 1px solid rgba(123, 99, 255, 0.65);
-  color: #150b36;
-  font-size: 0.88rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: none;
-  text-decoration: none;
-  transition: transform 160ms ease, box-shadow 160ms ease;
-}
-.tag-chip a:hover,
-.tag-chip a:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(123, 99, 255, 0.25);
-}
-.tag-chip span {
-  display: block;
-}
-.tag-chip-lg a {
-  font-size: 1rem;
-  padding: 0.45rem 1rem;
-}
+  @reference "tailwindcss";
+  .tag-chip {
+    list-style: none;
+  }
+  .tag-chip a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem 0.85rem;
+    border-radius: 4px;
+    background: linear-gradient(
+      135deg,
+      rgba(123, 99, 255, 0.1),
+      rgba(97, 218, 255, 0.08)
+    );
+    border: 1px solid rgba(123, 99, 255, 0.65);
+    color: #150b36;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: none;
+    text-decoration: none;
+    transition:
+      transform 160ms ease,
+      box-shadow 160ms ease;
+  }
+  .tag-chip a:hover,
+  .tag-chip a:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(123, 99, 255, 0.25);
+  }
+  .tag-chip span {
+    display: block;
+  }
+  .tag-chip-lg a {
+    font-size: 1rem;
+    padding: 0.45rem 1rem;
+  }
 </style>
