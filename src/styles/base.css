@@ -365,6 +365,19 @@ html[data-theme="dark"] {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.25rem;
 }
+.tag-posts {
+  @apply w-full my-8;
+}
+.tag-posts .article-card {
+  min-height: 0;
+  text-align: left;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+.tag-posts .article-card .flex {
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
 .article-card {
   border-top: 4px solid #e6e6fa;
   background: #f9f9ff;
