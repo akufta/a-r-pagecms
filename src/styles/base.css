@@ -6,20 +6,36 @@
 
 @layer base {
   :root,
-html[data-theme="light"] {
-  --background: #fafcfc;
-  --foreground: #222e36;
-  --accent: #7000d3;
-  --muted: #c7baf1;
-  --border: #c8a9e3;
-}
-html[data-theme="dark"] {
-  --background: #212737;
-  --foreground: #eaedf3;
-  --accent: #ac3feb;
-  --muted: #7d4f7c;
-  --border: #642451;
-}
+  html[data-theme="light"] {
+    --background: #fafcfc;
+    --foreground: #222e36;
+    --accent: #7000d3;
+    --muted: #c7baf1;
+    --border: #c8a9e3;
+  }
+  html[data-theme="dark"] {
+    --background: #212737;
+    --foreground: #eaedf3;
+    --accent: #ac3feb;
+    --muted: #7d4f7c;
+    --border: #642451;
+  }
+
+  @theme inline {
+    /* Mirror Tailwind config font family */
+    --font-mono: "IBM Plex Mono", "monospace";
+
+    /* Mirror Tailwind config “skin” colors using the new CSS-first API */
+    --color-skin-base: var(--foreground);
+    --color-skin-accent: var(--accent);
+    --color-skin-inverted: var(--background);
+
+    --color-skin-fill: var(--background);
+    --color-skin-card: color-mix(in srgb, var(--background) 90%, var(--accent) 10%);
+    --color-skin-card-muted: color-mix(in srgb, var(--background) 85%, var(--accent) 15%);
+
+    --color-skin-line: var(--border);
+  }
 
 .panel-card {
   margin: 2rem auto 0;
@@ -454,33 +470,21 @@ html[data-theme="dark"] {
     @apply focus-visible:no-underline focus-visible:outline-dashed;
   }
   svg {
-    @apply inline-block h-6 w-6 fill-skin-base group-hover:fill-skin-accent;
+    display: inline-block;
+    height: 1.5rem; /* h-6 */
+    width: 1.5rem; /* w-6 */
+    @apply fill-skin-base group-hover:fill-skin-accent;
   }
   svg.icon-tabler {
-    @apply inline-block h-6 w-6 scale-125 fill-transparent 
-    stroke-current stroke-2 opacity-90 group-hover:fill-transparent 
-    sm:scale-110;
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    @apply scale-125 fill-transparent 
+    stroke-current stroke-2 opacity-90 group-hover:fill-transparent;
   }
   .prose {
-    @apply prose-headings:!mb-3 prose-headings:!text-skin-base 
-    prose-h3:italic prose-p:!text-skin-base 
-    prose-a:!text-indigo-500 prose-a:!decoration-dashed prose-a:underline-offset-8 prose-a:transition-colors prose-a:duration-200 prose-a:ease-in-out
-    hover:prose-a:text-violet-400 prose-blockquote:!border-l-skin-accent
-    prose-blockquote:border-opacity-50 prose-blockquote:opacity-80
-    prose-figcaption:!text-skin-base prose-figcaption:opacity-70
-    prose-strong:!text-skin-base
-
-    
-    prose-code:rounded prose-code:bg-skin-card 
-    prose-code:bg-opacity-75 prose-code:p-1 
-    prose-code:before:!content-none prose-code:after:!content-none
-    prose-ol:!text-skin-base 
-    prose-ul:overflow-x-clip prose-ul:!text-skin-base prose-li:marker:!text-skin-accent
-    prose-table:text-skin-base prose-th:border
-    prose-th:border-skin-line prose-td:border 
-    prose-td:border-skin-line prose-img:!my-2 
-    prose-img:mx-auto 
-    prose-img:border-skin-line prose-hr:!border-skin-line;
+    color: var(--foreground);
+    font-size: inherit;
   }
 
   .prose thead th:first-child,

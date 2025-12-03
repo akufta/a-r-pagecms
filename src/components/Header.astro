@@ -3,7 +3,7 @@ import { LOGO_IMAGE, SITE } from "@config";
 import LinkButton from "./LinkButton.astro";
 
 export interface Props {
-  activeNav?: "about"| "posts" | "tags" | "search";
+  activeNav?: "about" | "posts" | "tags" | "search";
 }
 
 const { activeNav } = Astro.props;
@@ -25,12 +25,17 @@ const { activeNav } = Astro.props;
           ) : (
             SITE.title
           )
-        } 
-      </a> 
-     <!---toggle on or off text header -->  <a style="text-transform: uppercase; margin-left:1%"  href="/" class="logo whitespace-nowrap">
+        }
+      </a>
+      <!---toggle on or off text header -->
+      <a
+        style="text-transform: uppercase; margin-left:1%"
+        href="/"
+        class="logo whitespace-nowrap"
+      >
         Art Resources & Tutorials
-      </a> 
-     
+      </a>
+
       <nav id="nav-menu">
         <button
           class="hamburger-menu focus-outline"
@@ -106,9 +111,7 @@ const { activeNav } = Astro.props;
               </div>
             </details>
           </li>
-        
-       
-     
+
           <li>
             <LinkButton
               href="/search/"
@@ -182,7 +185,9 @@ const { activeNav } = Astro.props;
     @apply self-end p-2 sm:hidden;
   }
   .hamburger-menu svg {
-    @apply h-6 w-6 scale-125 fill-skin-base;
+    height: 1.5rem;
+    width: 1.5rem;
+    @apply scale-125 fill-skin-base;
   }
 
   nav {
@@ -206,7 +211,9 @@ const { activeNav } = Astro.props;
     border-radius: 0;
     background: rgba(229, 216, 255, 0.75);
     opacity: 0;
-    transition: opacity 0.25s ease, transform 0.25s ease;
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
     transform: translateY(2px);
     z-index: -1;
   }
@@ -281,7 +288,9 @@ const { activeNav } = Astro.props;
     @apply p-1;
   }
   nav button svg {
-    @apply h-6 w-6 fill-skin-base transition duration-300 ease-out hover:fill-skin-accent;
+    height: 1.5rem;
+    width: 1.5rem;
+    @apply fill-skin-base transition duration-300 ease-out hover:fill-skin-accent;
   }
   #theme-btn {
     @apply p-3 sm:p-1 transition duration-300;
